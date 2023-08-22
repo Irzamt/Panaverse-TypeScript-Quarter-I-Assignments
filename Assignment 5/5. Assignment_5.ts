@@ -7,7 +7,7 @@ function arr (array:number[], index:number, val:number):number[]{
 
 const myArray:number[] = [1, 2, 3, 4, 5];
 console.log(arr(myArray, 3, 10));
-//-------------------------------------------------------------------------------------------------------------------
+/****************************************************************************************************************** */
 
 //2- Implement a simple shopping cart program using an array. Create functions to add items, remove items, and update quantities using the splice method. Print the cart's contents after each operation
 /****************************************************************************************************************** */
@@ -30,7 +30,7 @@ console.log(shoppingAdd("orange", 2));
 console.log(shoppingAdd("apple", 6));
 console.log(shoppingRemove());
 console.log(shoppingUpdate("Banana", 8, 1));
-//-------------------------------------------------------------------------------------------------------------------
+/****************************************************************************************************************** */
 
 //3 - Write a program that uses a while loop to print the first 25 integers.
 /****************************************************************************************************************** */
@@ -40,7 +40,7 @@ while (index2 <= integers){
     console.log(index2);
     index2++;
 }
-//-------------------------------------------------------------------------------------------------------------------
+/****************************************************************************************************************** */
 
 //4 - Write a program that uses a while loop to print the first 10 even numbers.
 /****************************************************************************************************************** */
@@ -51,7 +51,7 @@ while (index1 <= 20){
     }
     index1++;
 }
-//-------------------------------------------------------------------------------------------------------------------
+/****************************************************************************************************************** */
 
 //5 - Create a function that takes a positive integer as parameter and uses a while loop to calculate and return the factorial of that number.
 /****************************************************************************************************************** */
@@ -72,7 +72,7 @@ function factorial(integer:number):string{
 }
 
 console.log(factorial(3));
-//-------------------------------------------------------------------------------------------------------------------
+/****************************************************************************************************************** */
 
 //6 - Write a program having an array of numbers if the number is negative it should remove the negative number from the array.
 /****************************************************************************************************************** */
@@ -91,7 +91,7 @@ let OrgArr:number[] = [1, 2, -5, 72, -52, 64];
 console.log("Original Array: " , OrgArr);
 let ReqArray = removeNegNumbers(OrgArr);
 console.log("Array w/o Negative Numbers: " , ReqArray);
-//-------------------------------------------------------------------------------------------------------------------
+/****************************************************************************************************************** */
 
 //7 - Create a function that takes an array of numbers as parameter. Use a while loop to calculate and return the sum of all the numbers in the array.
 /****************************************************************************************************************** */
@@ -105,7 +105,7 @@ function calSum(arr:number[]):number{
     return sum; 
 }
 console.log(calSum([1, 2, 3]));
-//-------------------------------------------------------------------------------------------------------------------
+/****************************************************************************************************************** */
 
 // 8 - Implement a program that takes a list of temperatures in Celsius as input from the user. Convert each temperature to Fahrenheit using the formula F = (C * 9/5) + 32 and store the converted temperatures in an array. Use a while loop to perform the conversion for each temperature.
 /****************************************************************************************************************** */
@@ -118,3 +118,4 @@ while (index3 < tempInCel.length){
     index3++;
 }
 console.log(tempInFar);
+/****************************************************************************************************************** */
