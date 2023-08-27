@@ -26,15 +26,22 @@ for (let i:number = 1; i <= arr1.length; i++){
 
 //3 - Implement a program that uses a loop to iterate through an array of numbers and remove all the even numbers from them and just leave the odd ones
 /******************************************************************************************************************* */
-let arr2:number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11];
-let arrOfOddNumbers:number[] = [];
 
-for (let i:number = 0; i < arr2.length; i++){
-    if (arr2[i] % 2 !== 0){
-        arrOfOddNumbers.push(arr2[i]);
+function odd(arr2:number[]){
+    let arrOfOddNumbers:number[] = [];
+
+    for (let i:number = 0; i < arr2.length; i++){
+        if (arr2[i] % 2 !== 0){
+            arrOfOddNumbers.push(arr2[i]);
+        }
     }
+    return arrOfOddNumbers;
+    
 }
-console.log(arrOfOddNumbers);
+let array:number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11];
+let arr6 = odd(array);
+console.log(arr6);
+
 /******************************************************************************************************************* */
 
 //4 - Write a program that defines a function to calculate the area of a circle. The function should take the radius as input and return the calculated area.
@@ -65,7 +72,7 @@ console.log(grades);
 //6 - Write a program that uses a function to find the largest element in an array of numbers.
 /******************************************************************************************************************* */
 let arr:number[] = [15, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let largest:number = arr[0];
+let largest:number = arr6[0];
 
 function largestElement(arr:number[]){
     for (let i:number = 0; i < arr.length; i++){
@@ -77,6 +84,6 @@ function largestElement(arr:number[]){
     return largest;
 }
 
-let largestNumber:number = largestElement(arr);
+let largestNumber:number = largestElement(arr6);
 console.log(`Largest Number: ${largestNumber}`);
 /******************************************************************************************************************* */
