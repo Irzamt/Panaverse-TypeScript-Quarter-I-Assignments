@@ -11,8 +11,11 @@ let array2 = [1, 2, 3, 4, 5];
 let updatedArr2 = array2.map(n => n * 2);
 console.log(updatedArr2);
 /********************************************************************************************************************** */
-// 3 - Given an array of strings ["apple", "banana", "cherry", "date", "grape"], use the filter method to create a new array containing only the fruits with more than 5 characters.0
+// 3 - Given an array of strings ["apple", "banana", "cherry", "date", "grape"], use the filter method to create a new array containing only the fruits with more than 5 characters
 /********************************************************************************************************************** */
+let array3 = ["apple", "banana", "cherry", "date", "grape"];
+let updatedArr3 = array3.filter(n => n.length > 5);
+console.log(updatedArr3);
 /********************************************************************************************************************** */
 // 4 - Given an array of numbers [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], use the map and filter methods together to create a new array containing the squares of even numbers.
 /********************************************************************************************************************** */
