@@ -21,9 +21,16 @@ let array3:string[] = ["apple", "banana", "cherry", "date", "grape"];
 let updatedArr3:string[] = array3.filter(n => n.length > 5);
 console.log(updatedArr3);
 /********************************************************************************************************************** */
+
 // 4 - Given an array of numbers [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], use the map and filter methods together to create a new array containing the squares of even numbers.
 /********************************************************************************************************************** */
+let array4:number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
+let updatedArr4:number[] = array4
+    .filter(n => n % 2 === 0)
+    .map(n => n * n);
+
+console.log(updatedArr4);
 /********************************************************************************************************************** */
 
 // 5 - Given an array of temperatures in Celsius [0, 10, 20, 30, 40], use the map method to create a new array where each temperature is converted to Fahrenheit using the formula (Celsius * 9/5) + 32.
