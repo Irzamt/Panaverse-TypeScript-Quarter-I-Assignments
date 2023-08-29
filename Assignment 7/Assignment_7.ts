@@ -35,15 +35,20 @@ console.log(updatedArr4);
 
 // 5 - Given an array of temperatures in Celsius [0, 10, 20, 30, 40], use the map method to create a new array where each temperature is converted to Fahrenheit using the formula (Celsius * 9/5) + 32.
 /********************************************************************************************************************** */
-let arrOfTempInCel = [0, 10, 20, 30, 40];
+let arrOfTempInCel:number[] = [0, 10, 20, 30, 40];
 
-let arrOfTempInFar = arrOfTempInCel.map (n => (n * (9/5)) + 32);
+let arrOfTempInFar:number[] = arrOfTempInCel.map (n => (n * (9/5)) + 32);
 console.log(arrOfTempInFar);
 /********************************************************************************************************************** */
 
 // 6 - Given an array of numbers [3, 6, 9, 12, 15, 18], use the map and filter methods together to create a new array containing the doubled values of odd numbers.
 /********************************************************************************************************************** */
+let array6:number[] =  [3, 6, 9, 12, 15, 18];
 
+let updatedArr6:number[] = array6
+    .filter(n => n % 2 !== 0)
+    .map(n => n * 2);
+console.log(updatedArr6);
 /********************************************************************************************************************** */
 
 // 7 - Given an array of names ["Alice", "Bob", "Charlie", "David", "Emily"], use the forEach method to log each name with an exclamation mark at the end, e.g., "Alice!".

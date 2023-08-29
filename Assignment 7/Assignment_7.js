@@ -33,6 +33,11 @@ console.log(arrOfTempInFar);
 /********************************************************************************************************************** */
 // 6 - Given an array of numbers [3, 6, 9, 12, 15, 18], use the map and filter methods together to create a new array containing the doubled values of odd numbers.
 /********************************************************************************************************************** */
+let array6 = [3, 6, 9, 12, 15, 18];
+let updatedArr6 = array6
+    .filter(n => n % 2 !== 0)
+    .map(n => n * 2);
+console.log(updatedArr6);
 /********************************************************************************************************************** */
 // 7 - Given an array of names ["Alice", "Bob", "Charlie", "David", "Emily"], use the forEach method to log each name with an exclamation mark at the end, e.g., "Alice!".
 /********************************************************************************************************************** */
