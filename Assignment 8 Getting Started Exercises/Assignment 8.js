@@ -1,47 +1,47 @@
 "use strict";
 // 2. Personal Message: Store a person’s name in a variable, and print a message to that person. Your message should be simple, such as, “Hello Eric, would you like to learn some Python today?”
 /********************************************************************************************************************* */
-// let userName:string = "Hello Irzam, Would you like to learn some TypeScript Today?";
-// console.log(userName);
+let userName = "Hello Irzam, Would you like to learn some TypeScript Today?";
+console.log(userName);
 /********************************************************************************************************************* */
 // 3. Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.
 /********************************************************************************************************************* */
-// let userName2: string = "jOhN";
-// let lower: string = userName2.toLowerCase();
-// let upper: string = userName2.toUpperCase();
-// let title: string = userName2
-//     .split(' ')
-//     .map(word => word.charAt(0).toUpperCase() + word.substring(1).toLowerCase())
-//     .join(' ');
-// console.log(`Name: ${userName2}\nLower Case: ${lower}\nUpper Case: ${upper}\nTitle Case: ${title}`);
+let userName2 = "jOhN";
+let lower = userName2.toLowerCase();
+let upper = userName2.toUpperCase();
+let title = userName2
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.substring(1).toLowerCase())
+    .join(' ');
+console.log(`Name: ${userName2}\nLower Case: ${lower}\nUpper Case: ${upper}\nTitle Case: ${title}`);
 /********************************************************************************************************************* */
 // 4. Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author. Your output should look something like the following, including the quotation marks:  Albert Einstein once said, “A person who never made a mistake never tried anything new.”
 /********************************************************************************************************************* */
-// let quote:string = 'Albert Einstein once said, “A person who never made a mistake never tried anything new.”';
-// console.log(quote);
+let quote = 'Albert Einstein once said, “A person who never made a mistake never tried anything new.”';
+console.log(quote);
 /********************************************************************************************************************* */
 // 5. Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name in a variable called famous_person. Then compose your message and store it in a new variable called message. Print your message.
 /********************************************************************************************************************* */
-// let famous_person: string = "Albert Einstein";
-// let message: string = '“A person who never made a mistake never tried anything new.”';
-// console.log(`${famous_person} once said, ${message}`);
+let famous_person = "Albert Einstein";
+let message = '“A person who never made a mistake never tried anything new.”';
+console.log(`${famous_person} once said, ${message}`);
 /********************************************************************************************************************* */
 // 6. Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.
 /********************************************************************************************************************* */
-// let name1: string = "\t\n   Irzam   \t\n";
-// let strip: string = name1.trim()
-// console.log(`With Whitespace: ${name1}\n Without Whitespace: ${strip} `);
+let name1 = "\t\n   Irzam   \t\n";
+let strip = name1.trim();
+console.log(`With Whitespace: ${name1}\n Without Whitespace: ${strip} `);
 /********************************************************************************************************************* */
 // 7. Number Eight: Write addition, subtraction, multiplication, and division operations that each result in the number 8. Be sure to enclose your operations in print statements to see the results.
 /********************************************************************************************************************* */
-// // Addition: 12 + (-4) = 8
-// console.log("Addition:", 12 + (-4));
-// // Subtraction: 16 - 8 = 8
-// console.log("Subtraction:", 16 - 8);
-// // Multiplication: 4 * 2 = 8
-// console.log("Multiplication:", 4 * 2);
-// // Division: 16 / 2 = 8
-// console.log("Division:", 16 / 2);
+// Addition: 12 + (-4) = 8
+console.log("Addition:", 12 + (-4));
+// Subtraction: 16 - 8 = 8
+console.log("Subtraction:", 16 - 8);
+// Multiplication: 4 * 2 = 8
+console.log("Multiplication:", 4 * 2);
+// Division: 16 / 2 = 8
+console.log("Division:", 16 / 2);
 /********************************************************************************************************************* */
 // 8. You should create four lines that look like this:
 // _____________________________________________
@@ -49,57 +49,57 @@
 // _____________________________________________
 // Your output should simply be four lines with the number 8 appearing once on each line.
 /********************************************************************************************************************* */
+//_____________________________________________
+console.log(5 + 3);
 // _____________________________________________
-// console.log(5 + 3);
-// // _____________________________________________
-// // _____________________________________________
-// console.log(10 - 2);
-// // _____________________________________________
-// // _____________________________________________
-// console.log(4 * 2);
-// // _____________________________________________
-// // _____________________________________________
-// console.log(16 / 2);
-// // _____________________________________________
+// _____________________________________________
+console.log(10 - 2);
+// _____________________________________________
+// _____________________________________________
+console.log(4 * 2);
+// _____________________________________________
+// _____________________________________________
+console.log(16 / 2);
+// _____________________________________________
 /********************************************************************************************************************* */
 // 9. Favorite Number: Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message.
 /********************************************************************************************************************* */
-// let favNum: number = 4;
-// console.log(`My favourite Bumber is: ${favNum}`);
+let favNum = 4;
+console.log(`My favourite Bumber is: ${favNum}`);
 /********************************************************************************************************************* */
 // 10. Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. If you don’t have anything specific to write because your programs are too simple at this point, just add your name and the current date at the top of each program file. Then write one sentence describing what the program does.
 /********************************************************************************************************************* */
 //Program 1:
-// let userName2: string = "jOhN";
-// let lower: string = userName2.toLowerCase(); //Lower Case
-// let upper: string = userName2.toUpperCase(); //Upper Case
-// let title: string = userName2
-//     .split(' ')
-//     .map(word => word.charAt(0).toUpperCase() + word.substring(1).toLowerCase())
-//     .join(' '); // //Title Case conversion
-// console.log(`Name: ${userName2}\nLower Case: ${lower}\nUpper Case: ${upper}\nTitle Case: ${title}`);
+let userName3 = "jOhN";
+let lower2 = userName3.toLowerCase(); //Lower Case
+let upper2 = userName3.toUpperCase(); //Upper Case
+let title2 = userName3
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.substring(1).toLowerCase())
+    .join(' '); // //Title Case conversion
+console.log(`Name: ${userName3}\nLower Case: ${lower2}\nUpper Case: ${upper2}\nTitle Case: ${title2}`);
 //---------------------------------------------------------------------------------------------------------------
-//Program 2:
-// let favNum: number = 4;
-// console.log(`My favourite Bumber is: ${favNum}`); // My favourite Number is printed
+// Program 2:
+let favNum2 = 4;
+console.log(`My favourite Bumber is: ${favNum2}`); // My favourite Number is printed
 /********************************************************************************************************************* */
 // 11. Names: Store the names of a few of your friends in a array called names. Print each person’s name by accessing each element in the list, one at a time.
 /********************************************************************************************************************* */
-// let names: string[] = ['Ali', 'Fahad', 'Omer'];
-// for (let i: number = 0; i < names.length; i++)
-//     console.log(names[i]);
+let names = ['Ali', 'Fahad', 'Omer'];
+for (let i = 0; i < names.length; i++)
+    console.log(names[i]);
 /********************************************************************************************************************* */
 // 12. Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message should be the same, but each message should be personalized with the person’s name.
 /********************************************************************************************************************* */
-// let names: string[] = ['Ali', 'Fahad', 'Omer'];
-// for (let i: number = 0; i < names.length; i++)
-//     console.log(names[i], ", Tu n mera 500 wapis kb dena h?");
+let names4 = ['Ali', 'Fahad', 'Omer'];
+for (let i = 0; i < names4.length; i++)
+    console.log(names4[i], ", Tu n mera 500 wapis kb dena h?");
 /********************************************************************************************************************* */
 // 13. Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
 /********************************************************************************************************************* */
-// let vehicles: string[] = ['Lexus', 'Mercedes', 'Rolls Royce']
-// for (let i: number = 0; i < vehicles.length; i++)
-//     console.log("I would like to own a ", vehicles[i]);
+let vehicles = ['Lexus', 'Mercedes', 'Rolls Royce'];
+for (let i = 0; i < vehicles.length; i++)
+    console.log("I would like to own a ", vehicles[i]);
 /********************************************************************************************************************* */
 // 14. Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
 /********************************************************************************************************************* */
@@ -107,15 +107,15 @@ let guests = ['Zainu', 'Amna', 'Asad'];
 for (let i = 0; i < guests.length; i++)
     console.log(guests[i], "you are invited to dinner @ 8:00 PM Saturday Night!!");
 /********************************************************************************************************************* */
-// 15. Changing Guest List: You just heard that one of your guests can’t make the
-// dinner, so you need to send out a new set of invitations. You’ll have to think of
-// someone else to invite.
+// 15. Changing Guest List: You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations. You’ll have to think of someone else to invite.
 // • Start with your program from Exercise 14. Add a print statement at the
 // end of your program stating the name of the guest who can’t make it.
 // • Modify your list, replacing the name of the guest who can’t make it with
 // the name of the new person you are inviting.
 // • Print a second set of invitation messages, one for each person who is still
 // in your list.
+/********************************************************************************************************************* */
+/********************************************************************************************************************* */
 // 16. More Guests: You just found a bigger dinner table, so now more space is
 // available. Think of three more guests to invite to dinner.
 // • Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a
