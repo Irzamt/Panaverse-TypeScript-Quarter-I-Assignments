@@ -22,15 +22,43 @@
 /********************************************************************************************************************* */
 // 5. Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name in a variable called famous_person. Then compose your message and store it in a new variable called message. Print your message.
 /********************************************************************************************************************* */
-let famous_person = "Albert Einstein";
-let message = '“A person who never made a mistake never tried anything new.”';
-console.log(`${famous_person} once said, ${message}`);
-// 6. Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each
-// character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.
+// let famous_person: string = "Albert Einstein";
+// let message: string = '“A person who never made a mistake never tried anything new.”';
+// console.log(`${famous_person} once said, ${message}`);
+/********************************************************************************************************************* */
+// 6. Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.
+/********************************************************************************************************************* */
+// let name1: string = "\t\n   Irzam   \t\n";
+// let strip: string = name1.trim()
+// console.log(`With Whitespace: ${name1}\n Without Whitespace: ${strip} `);
+/********************************************************************************************************************* */
 // 7. Number Eight: Write addition, subtraction, multiplication, and division operations that each result in the number 8. Be sure to enclose your operations in print statements to see the results.
+/********************************************************************************************************************* */
+// // Addition: 12 + (-4) = 8
+// console.log("Addition:", 12 + (-4));
+// // Subtraction: 16 - 8 = 8
+// console.log("Subtraction:", 16 - 8);
+// // Multiplication: 4 * 2 = 8
+// console.log("Multiplication:", 4 * 2);
+// // Division: 16 / 2 = 8
+// console.log("Division:", 16 / 2);
+/********************************************************************************************************************* */
 // 8. You should create four lines that look like this:
 // _____________________________________________
 // console.log(5 + 3)
+// _____________________________________________
+/********************************************************************************************************************* */
+// _____________________________________________
+console.log(5 + 3);
+// _____________________________________________
+// _____________________________________________
+console.log(10 - 2);
+// _____________________________________________
+// _____________________________________________
+console.log(4 * 2);
+// _____________________________________________
+// _____________________________________________
+console.log(16 / 2);
 // _____________________________________________
 // Your output should simply be four lines with the number 8 appearing once on each line.
 // 9. Favorite Number: Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message.
