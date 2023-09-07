@@ -47,27 +47,53 @@
 // _____________________________________________
 // console.log(5 + 3)
 // _____________________________________________
+// Your output should simply be four lines with the number 8 appearing once on each line.
 /********************************************************************************************************************* */
 // _____________________________________________
-console.log(5 + 3);
-// _____________________________________________
-// _____________________________________________
-console.log(10 - 2);
-// _____________________________________________
-// _____________________________________________
-console.log(4 * 2);
-// _____________________________________________
-// _____________________________________________
-console.log(16 / 2);
-// _____________________________________________
-// Your output should simply be four lines with the number 8 appearing once on each line.
+// console.log(5 + 3);
+// // _____________________________________________
+// // _____________________________________________
+// console.log(10 - 2);
+// // _____________________________________________
+// // _____________________________________________
+// console.log(4 * 2);
+// // _____________________________________________
+// // _____________________________________________
+// console.log(16 / 2);
+// // _____________________________________________
+/********************************************************************************************************************* */
 // 9. Favorite Number: Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message.
-// 10. Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. If you don’t have anything specific to write
-// because your programs are too simple at this point, just add your name and the current date at the top of each program file. Then write one sentence
-// describing what the program does.
+/********************************************************************************************************************* */
+// let favNum: number = 4;
+// console.log(`My favourite Bumber is: ${favNum}`);
+/********************************************************************************************************************* */
+// 10. Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. If you don’t have anything specific to write because your programs are too simple at this point, just add your name and the current date at the top of each program file. Then write one sentence describing what the program does.
+/********************************************************************************************************************* */
+//Program 1:
+// let userName2: string = "jOhN";
+// let lower: string = userName2.toLowerCase(); //Lower Case
+// let upper: string = userName2.toUpperCase(); //Upper Case
+// let title: string = userName2
+//     .split(' ')
+//     .map(word => word.charAt(0).toUpperCase() + word.substring(1).toLowerCase())
+//     .join(' '); // //Title Case conversion
+// console.log(`Name: ${userName2}\nLower Case: ${lower}\nUpper Case: ${upper}\nTitle Case: ${title}`);
+//---------------------------------------------------------------------------------------------------------------
+//Program 2:
+// let favNum: number = 4;
+// console.log(`My favourite Bumber is: ${favNum}`); // My favourite Number is printed
+/********************************************************************************************************************* */
 // 11. Names: Store the names of a few of your friends in a array called names. Print each person’s name by accessing each element in the list, one at a time.
-// 12. Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message
-// should be the same, but each message should be personalized with the person’s name.
+/********************************************************************************************************************* */
+// let names: string[] = ['Ali', 'Fahad', 'Omer'];
+// for (let i: number = 0; i < names.length; i++)
+//     console.log(names[i]);
+/********************************************************************************************************************* */
+// 12. Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message should be the same, but each message should be personalized with the person’s name.
+/********************************************************************************************************************* */
+let names = ['Ali', 'Fahad', 'Omer'];
+for (let i = 0; i < names.length; i++)
+    console.log(names[i], ", Tu n mera 500 wapis kb dena h?");
 // 13. Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list
 // to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
 // 14. Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to
