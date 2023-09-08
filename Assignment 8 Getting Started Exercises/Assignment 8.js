@@ -34,12 +34,12 @@ for (let i = 0; i < guests2.length; i++) {
 // • Use append() to add one new guest to the end of your list.
 // • Print a new set of invitation messages, one for each person in your list.
 /********************************************************************************************************************* */
-console.log("I  found a bigger table");
+// console.log("I  found a bigger table");
 updatedGuestList.unshift("Raza"); //Added at the begining
-updatedGuestList.push("Zaini");
+updatedGuestList.push("Zaini"); //
 updatedGuestList.splice(updatedGuestList.length / 2, 0, "Farhan");
-for (let i = 0; i < updatedGuestList.length; i++)
-    console.log(updatedGuestList[i], "you are invited to dinner @ 8:00 PM Saturday Night!!");
+// for (let i: number = 0; i < updatedGuestList.length; i++)
+//     console.log(updatedGuestList[i], "you are invited to dinner @ 8:00 PM Saturday Night!!");
 /********************************************************************************************************************* */
 // 17. Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
 // • Start with your program from Exercise 16. Add a new line that prints a message saying that you can invite only two people for dinner.
@@ -47,6 +47,17 @@ for (let i = 0; i < updatedGuestList.length; i++)
 // • Print a message to each of the two people still on your list, letting them know they’re still invited.
 // • Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.
 /********************************************************************************************************************* */
+console.log('I invited only 2 people for dinner');
+let uninvitedGuests = [];
+let totalguest = updatedGuestList.length;
+for (let i = 0; i <= totalguest; i++) {
+    if (i < totalguest - 2)
+        uninvitedGuests.push(updatedGuestList.shift());
+}
+for (let i = 0; i < uninvitedGuests.length; i++)
+    console.log(uninvitedGuests[i], "Sorry you are uninvited to dinner!!");
+for (let i = 0; i < updatedGuestList.length; i++)
+    console.log(updatedGuestList[i], "you are still invited to dinner @ 8:00 PM Saturday Night!!");
 /********************************************************************************************************************* */
 // 18. Seeing the World: Think of at least five places in the world you’d like to visit.
 // • Store the locations in a array. Make sure the array is not in alphabetical order.

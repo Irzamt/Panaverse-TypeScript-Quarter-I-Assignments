@@ -152,7 +152,7 @@
 // • Print a second set of invitation messages, one for each person who is still
 // in your list.
 /********************************************************************************************************************* */
-type guest = {guestName: string, isComing: boolean};
+type guest = { guestName: string, isComing: boolean };
 
 let guests2: guest[] = [
     {
@@ -171,8 +171,8 @@ let guests2: guest[] = [
 
 let updatedGuestList: string[] = [];
 
-for (let i:number = 0; i < guests2.length; i++){
-    if (guests2[i].isComing === false){
+for (let i: number = 0; i < guests2.length; i++) {
+    if (guests2[i].isComing === false) {
         guests2[i].guestName = "Abdullah";
         guests2[i].isComing = true;
     }
@@ -180,8 +180,8 @@ for (let i:number = 0; i < guests2.length; i++){
 }
 
 // for (let i: number = 0; i < updatedGuestList.length; i++)
-    // console.log(updatedGuestList[i], "you are invited to dinner @ 8:00 PM Saturday Night!!");
-        
+// console.log(updatedGuestList[i], "you are invited to dinner @ 8:00 PM Saturday Night!!");
+
 
 /********************************************************************************************************************* */
 
@@ -193,14 +193,14 @@ for (let i:number = 0; i < guests2.length; i++){
 // • Use append() to add one new guest to the end of your list.
 // • Print a new set of invitation messages, one for each person in your list.
 /********************************************************************************************************************* */
-console.log("I  found a bigger table");
+// console.log("I  found a bigger table");
 
 updatedGuestList.unshift("Raza"); //Added at the begining
 updatedGuestList.push("Zaini"); //
-updatedGuestList.splice(updatedGuestList.length/2, 0, "Farhan");
+updatedGuestList.splice(updatedGuestList.length / 2, 0, "Farhan");
 
-for (let i: number = 0; i < updatedGuestList.length; i++)
-    console.log(updatedGuestList[i], "you are invited to dinner @ 8:00 PM Saturday Night!!");
+// for (let i: number = 0; i < updatedGuestList.length; i++)
+//     console.log(updatedGuestList[i], "you are invited to dinner @ 8:00 PM Saturday Night!!");
 
 
 /********************************************************************************************************************* */
@@ -212,6 +212,23 @@ for (let i: number = 0; i < updatedGuestList.length; i++)
 // • Print a message to each of the two people still on your list, letting them know they’re still invited.
 // • Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.
 /********************************************************************************************************************* */
+console.log('I invited only 2 people for dinner');
+
+let uninvitedGuests: string[] = [];
+let totalguest = updatedGuestList.length;
+
+for (let i: number = 0; i <= totalguest; i++) {
+    if (i < totalguest - 2)
+    uninvitedGuests.push(updatedGuestList.shift() as string);
+}
+
+for (let i: number = 0; i < uninvitedGuests.length; i++)
+    console.log(uninvitedGuests[i], "Sorry you are uninvited to dinner!!");
+
+for (let i: number = 0; i < updatedGuestList.length; i++)
+    console.log(updatedGuestList[i], "you are still invited to dinner @ 8:00 PM Saturday Night!!");
+
+
 
 
 /********************************************************************************************************************* */
