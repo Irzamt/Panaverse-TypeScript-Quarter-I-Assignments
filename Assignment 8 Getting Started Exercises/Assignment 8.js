@@ -398,11 +398,14 @@ console.log(car == 'subaru')
 ***************************************************************************************************************************/
 // let  alien_color: string = 'green'
 // let points: number = 0
+// 1st Version ----> Passes the test
+//------------------------------------------
 // if (alien_color === 'green'){
 //     points += 5
 //     console.log(`Player just earned ${points} points`);
 // }
-//Other Version
+//2nd Version ----> Fails the test
+//-------------------------------------------
 // let alien_color_fail: string = 'red';
 // if (alien_color_fail === 'green') {
 //     console.log("Congratulations! You just earned 5 points.");
@@ -413,9 +416,10 @@ console.log(car == 'subaru')
 • If the alien’s color isn’t green, print a statement that the player just earned 10 points.
 • Write one version of this program that runs the if block and another that runs the else block.
 ***************************************************************************************************************************/
-let alien_color = 'red';
-let points = 0;
-// 1st Version
+// let  alien_color: string = 'green'
+// let points: number = 0
+// 1st Version ----> Using if Statements
+//----------------------------------------------------------
 // if (alien_color === 'green'){
 //     points += 5
 //     console.log(`Player just earned ${points} points`);
@@ -424,15 +428,16 @@ let points = 0;
 //     points += 10
 //     console.log(`Player just earned ${points} points`);
 // }
-// 2nd Version
-if (alien_color === 'red') {
-    points += 5;
-    console.log(`Player just earned ${points} points`);
-}
-else {
-    points += 10;
-    console.log(`Player just earned ${points} points`);
-}
+// 2nd Version ----> Using if-else Statement
+//---------------------------------------------------------
+// if (alien_color === 'red'){
+//     points += 5
+//     console.log(`Player just earned ${points} points`);
+// }
+// else{
+//     points += 10
+//     console.log(`Player just earned ${points} points`);
+// }
 /*********************************************************************************************************************
 27. Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
 • If the alien is green, print a message that the player earned 5 points.
@@ -440,6 +445,51 @@ else {
 • If the alien is red, print a message that the player earned 15 points.
 • Write three versions of this program, making sure each message is printed for the appropriate color alien.
 ***************************************************************************************************************************/
+let alien_color = 'green';
+let points = 0;
+// 1st Version ----> Using if Statements
+//----------------------------------------------------------
+// if (alien_color === 'green'){
+//     points += 5
+//     console.log(`Player just earned ${points} points`);
+// }
+// if (alien_color === 'yellow'){
+//     points += 10
+//     console.log(`Player just earned ${points} points`);
+// }
+// if (alien_color === 'red'){
+//     points += 15
+//     console.log(`Player just earned ${points} points`);
+// }
+// 2nd Version ----> Using if-else Statement
+//---------------------------------------------------------
+// if (alien_color === 'green'){
+//     points += 5
+//     console.log(`Player just earned ${points} points`);
+// }
+// else if (alien_color === 'yellow'){
+//     points += 10
+//     console.log(`Player just earned ${points} points`);
+// }
+// else {
+//     points += 15
+//     console.log(`Player just earned ${points} points`);
+// }
+// 3rd Version ----> Using Switch Statement
+//---------------------------------------------------------
+switch (alien_color) {
+    case "green":
+        points += 5;
+        console.log(`Player just earned ${points} points`);
+        break;
+    case "yellow":
+        points += 10;
+        console.log(`Player just earned ${points} points`);
+        break;
+    case "red":
+        points += 15;
+        console.log(`Player just earned ${points} points`);
+}
 /*********************************************************************************************************************
 28. Stages of Life: Write an if-else chain that determines a person’s stage of life. Set a value for the variable age, and then:
 • If the person is less than 2 years old, print a message that the person is a baby.
