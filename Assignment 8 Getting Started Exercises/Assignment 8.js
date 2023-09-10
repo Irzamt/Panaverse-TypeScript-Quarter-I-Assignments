@@ -517,24 +517,31 @@ console.log(car == 'subaru')
 • Make a array of your three favorite fruits and call it favorite_fruits.
 • Write five if statements. Each should check whether a certain kind of fruit is in your array. If the fruit is in your array, the if block should print a statement, such as You really like bananas!
 ***************************************************************************************************************************/
-const favFruits = ['orange', 'mango', 'banana'];
-for (let i = 0; i < favFruits.length; i++) {
-    if (favFruits[i] === 'orange')
-        console.log("You really like oranges!");
-    if (favFruits[i] === 'mango')
-        console.log("You really like mangoes!");
-    if (favFruits[i] === 'banana')
-        console.log("You really like banana!");
-    if (favFruits[i] === 'apple')
-        console.log("You really like apples!");
-    if (favFruits[i] === 'kiwi')
-        console.log("You really like kiwi!");
-}
+// const favFruits: string[] = ['orange', 'mango', 'banana'];
+// for (let i:number = 0; i < favFruits.length; i++){
+//     if (favFruits[i] === 'orange')
+//         console.log("You really like oranges!");
+//     if (favFruits[i] === 'mango')
+//         console.log("You really like mangoes!");
+//     if (favFruits[i] === 'banana')
+//         console.log("You really like banana!");
+//     if (favFruits[i] === 'apple')
+//         console.log("You really like apples!");
+//     if (favFruits[i] === 'kiwi')
+//         console.log("You really like kiwi!");
+// }
 /*********************************************************************************************************************
-30. Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to each user:
+30. Hello Admin: Make an array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to each user:
 • If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status report?
 • Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
 ***************************************************************************************************************************/
+const usernames = ["admin", "Eric", "Alice", "Bob", "Charlie"];
+for (let i = 0; i < usernames.length; i++) {
+    if (usernames[i] === "admin")
+        console.log("Hello admin, would you like to see a status report?");
+    else
+        console.log(`Hello ${usernames[i]}, thank you for logging in again.`);
+}
 /*********************************************************************************************************************
  31. No Users: Add an if test to Exercise 28 to make sure the list of users is not empty.
 • If the list is empty, print the message We need to find some users!
