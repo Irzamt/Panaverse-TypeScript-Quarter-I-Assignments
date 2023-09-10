@@ -336,64 +336,64 @@ console.log(car == 'subaru')
 • Look closely at your results, and make sure you understand why each line evaluates to True or False.
 • Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
 ***************************************************************************************************************************/
-// Test 1: Equality check
-let num1: number = 5;
-let num2: number = 5;
-console.log("Is num1 == num2? I predict True.");
-console.log(num1 == num2); // True
+// // Test 1: Equality check
+// let num1: number = 5;
+// let num2: number = 5;
+// console.log("Is num1 == num2? I predict True.");
+// console.log(num1 == num2); // True
 
-// Test 2: Inequality check
-let x: number = 10;
-let y: number = 20;
-console.log("Is x != y? I predict True.");
-console.log(x != y); // True
+// // Test 2: Inequality check
+// let x: number = 10;
+// let y: number = 20;
+// console.log("Is x != y? I predict True.");
+// console.log(x != y); // True
 
-// Test 3: Greater than check
-let a: number = 15;
-let b: number = 10;
-console.log("Is a > b? I predict True.");
-console.log(a > b); // True
+// // Test 3: Greater than check
+// let a: number = 15;
+// let b: number = 10;
+// console.log("Is a > b? I predict True.");
+// console.log(a > b); // True
 
-// Test 4: Less than check
-let p: number = 7;
-let q: number = 12;
-console.log("Is p < q? I predict True.");
-console.log(p < q); // True
+// // Test 4: Less than check
+// let p: number = 7;
+// let q: number = 12;
+// console.log("Is p < q? I predict True.");
+// console.log(p < q); // True
 
-// Test 5: Greater than or equal to check
-let m: number = 25;
-let n: number = 25;
-console.log("Is m >= n? I predict True.");
-console.log(m >= n); // True
+// // Test 5: Greater than or equal to check
+// let m: number = 25;
+// let n: number = 25;
+// console.log("Is m >= n? I predict True.");
+// console.log(m >= n); // True
 
-// Test 6: Less than or equal to check
-let r: number = 30;
-let s: number = 35;
-console.log("Is r >= s? I predict False.");
-console.log(r >= s); // False
+// // Test 6: Less than or equal to check
+// let r: number = 30;
+// let s: number = 35;
+// console.log("Is r >= s? I predict False.");
+// console.log(r >= s); // False
 
-// Test 7: Strict equality check
-let str1: string = "hello";
-let str2: string = "hello";
-console.log("Is str1 !== str2? I predict False.");
-console.log(str1 !== str2); // False
+// // Test 7: Strict equality check
+// let str1: string = "hello";
+// let str2: string = "hello";
+// console.log("Is str1 !== str2? I predict False.");
+// console.log(str1 !== str2); // False
 
-// Test 8: Check if bool1 is true
-let bool1: boolean = true;
-console.log("Is bool1 true? I predict True.");
-console.log(bool1); // True
+// // Test 8: Check if bool1 is true
+// let bool1: boolean = true;
+// console.log("Is bool1 true? I predict True.");
+// console.log(bool1); // True
 
-// Test 9: Logical AND operator
-let sunny: boolean = true;
-let warm: boolean = true;
-console.log("Is it sunny && warm? I predict True.");
-console.log(sunny && warm); // True
+// // Test 9: Logical AND operator
+// let sunny: boolean = true;
+// let warm: boolean = true;
+// console.log("Is it sunny && warm? I predict True.");
+// console.log(sunny && warm); // True
 
-// Test 10: Logical OR operator
-let raining: boolean = false;
-let windy: boolean = true;
-console.log("Is it raining || windy? I predict True.");
-console.log(raining || windy); // True
+// // Test 10: Logical OR operator
+// let raining: boolean = false;
+// let windy: boolean = true;
+// console.log("Is it raining || windy? I predict True.");
+// console.log(raining || windy); // True
 
 /*********************************************************************************************************************
 24. More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
@@ -404,6 +404,71 @@ console.log(raining || windy); // True
 • Test whether an item is in a array
 • Test whether an item is not in a array
 ***************************************************************************************************************************/
+// Tests for equality and inequality with strings:
+
+// Equality Test with Strings (True)
+let str1: string = "apple";
+let str2: string = "apple";
+console.log("Is str1 equal to str2? I predict True.");
+console.log(str1 === str2); // True
+
+// Inequality Test with Strings (False)
+let str3: string = "banana";
+let str4: string = "apple";
+console.log("Is str3 not equal to str4? I predict False.");
+console.log(str3 === str4); // False
+
+// Tests using the toLowerCase function:
+
+// Lowercase Test (True)
+let word1: string = "HELLO";
+let word2: string = "hello";
+console.log("Is word1.toLowerCase() equal to word2? I predict True.");
+console.log(word1.toLowerCase() === word2); // True
+
+// Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to:
+
+// Greater Than Test (True)
+let num1: number = 10;
+let num2: number = 5;
+console.log("Is num1 greater than num2? I predict True.");
+console.log(num1 > num2); // True
+
+// Less Than or Equal To Test (False)
+let num3: number = 15;
+let num4: number = 10;
+console.log("Is num3 less than or equal to num4? I predict False.");
+console.log(num3 <= num4); // False
+
+// Tests using "and" and "or" operators:
+
+// Logical OR Test (True)
+let isSunny: boolean = true;
+let isWarm: boolean = false;
+console.log("Is it sunny or warm? I predict True.");
+console.log(isSunny || isWarm); // True
+
+// Logical AND Test (False)
+let isRaining: boolean = true;
+let isWindy: boolean = false;
+console.log("Is it raining and windy? I predict False.");
+console.log(isRaining && isWindy); // False
+
+// Test whether an item is in an array:
+
+// Array Includes Test (True)
+let fruits: string[] = ["apple", "banana", "cherry"];
+let searchFruit: string = "banana";
+console.log(`Is ${searchFruit} in the fruits array? I predict True.`);
+console.log(fruits.includes(searchFruit)); // True
+
+// Test whether an item is not in an array:
+
+// Array Excludes Test (False)
+let colors: string[] = ["red", "green", "blue"];
+let searchColor: string = "yellow";
+console.log(`Is ${searchColor} not in the colors array? I predict False.`);
+console.log(!colors.includes(searchColor)); // False
 
 /*********************************************************************************************************************
 25. Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
