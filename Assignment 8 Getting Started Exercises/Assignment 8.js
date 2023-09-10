@@ -535,15 +535,15 @@ console.log(car == 'subaru')
 • If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status report?
 • Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
 ***************************************************************************************************************************/
-const usernames = ["admin", "Eric", "Alice", "Bob", "Charlie"];
-for (let i = 0; i < usernames.length; i++) {
-    if (usernames[i] === "admin")
-        console.log("Hello admin, would you like to see a status report?");
-    else
-        console.log(`Hello ${usernames[i]}, thank you for logging in again.`);
-}
+// const usernames: string[] = ["admin", "Eric", "Alice", "Bob", "Charlie"];
+// for (let i:number = 0; i < usernames.length; i++) {
+//     if (usernames[i] === "admin")
+//         console.log("Hello admin, would you like to see a status report?");
+//     else
+//         console.log(`Hello ${usernames[i]}, thank you for logging in again.`);
+// }
 /*********************************************************************************************************************
- 31. No Users: Add an if test to Exercise 28 to make sure the list of users is not empty.
+31. No Users: Add an if test to Exercise 28 to make sure the list of users is not empty.
 • If the list is empty, print the message We need to find some users!
 • Remove all of the usernames from your array, and make sure the correct message is printed.
 ***************************************************************************************************************************/
@@ -560,6 +560,10 @@ for (let i = 0; i < usernames.length; i++) {
  • Loop through the array.
  • Use an if-else chain inside the loop to print the proper ordinal ending for each number. Your output should read "1st 2nd 3rd 4th 5th 6th 7th 8th 9th", and each result should be on a separate line.
 ***************************************************************************************************************************/
+let names = ["abu hurairah", "naveed", "ali"];
+names.forEach((data) => {
+    console.log(`Your class on sundy will be onTime ${data}`);
+});
 /*********************************************************************************************************************
 34. Pizzas: Think of at least three kinds of your favorite pizza. Store these pizza names in a array, and then use a for loop to print the name of each pizza.
  • Modify your for loop to print a sentence using the name of the pizza instead of printing just the name of the pizza. For each pizza you should have one line of output containing a simple statement like I like pepperoni pizza.
