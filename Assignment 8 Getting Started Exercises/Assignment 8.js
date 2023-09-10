@@ -445,8 +445,8 @@ console.log(car == 'subaru')
 • If the alien is red, print a message that the player earned 15 points.
 • Write three versions of this program, making sure each message is printed for the appropriate color alien.
 ***************************************************************************************************************************/
-let alien_color = 'green';
-let points = 0;
+// let  alien_color: string = 'green'
+// let points: number = 0
 // 1st Version ----> Using if Statements
 //----------------------------------------------------------
 // if (alien_color === 'green'){
@@ -477,19 +477,19 @@ let points = 0;
 // }
 // 3rd Version ----> Using Switch Statement
 //---------------------------------------------------------
-switch (alien_color) {
-    case "green":
-        points += 5;
-        console.log(`Player just earned ${points} points`);
-        break;
-    case "yellow":
-        points += 10;
-        console.log(`Player just earned ${points} points`);
-        break;
-    case "red":
-        points += 15;
-        console.log(`Player just earned ${points} points`);
-}
+// switch (alien_color){
+//     case "green":
+//         points += 5
+//         console.log(`Player just earned ${points} points`);
+//         break;
+//     case "yellow":
+//         points += 10
+//         console.log(`Player just earned ${points} points`);
+//         break;
+//     case "red":
+//         points += 15
+//         console.log(`Player just earned ${points} points`);
+// }
 /*********************************************************************************************************************
 28. Stages of Life: Write an if-else chain that determines a person’s stage of life. Set a value for the variable age, and then:
 • If the person is less than 2 years old, print a message that the person is a baby.
@@ -499,6 +499,19 @@ switch (alien_color) {
 • If the person is at least 20 years old but less than 65, print a message that the person is an adult.
 • If the person is age 65 or older, print a message that the person is an elder.
 ***************************************************************************************************************************/
+const age = 1;
+if (age >= 65)
+    console.log("The person is an elder");
+else if (age >= 20)
+    console.log("The person is an adult");
+else if (age >= 13)
+    console.log("The person is a teenager");
+else if (age >= 4)
+    console.log("The person is a kid");
+else if (age >= 2)
+    console.log("The person is a toddler");
+else
+    console.log("The person is a baby");
 /*********************************************************************************************************************
 29. Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent if statements that check for certain fruits in your array.
 • Make a array of your three favorite fruits and call it favorite_fruits.
