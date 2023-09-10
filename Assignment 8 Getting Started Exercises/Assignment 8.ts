@@ -146,7 +146,7 @@
 //     {
 //         guestName: "Fahad",
 //     }
-// ]
+// ];
 
 // for (let i: number = 0; i < guests.length; i++)
 //     console.log(guests[i].guestName, "you are invited to dinner @ 8:00 PM Saturday Night!!");
@@ -159,31 +159,31 @@
 • Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
 • Print a second set of invitation messages, one for each person who is still in your list.
 **********************************************************************************************************************/
-// type guest = { guestName: string, isComing: boolean };
+type guest = { guestName: string, isComing: boolean };
 
-// let guests: guest[] = [
-//     {
-//         guestName: "Ali",
-//         isComing: true
-//     },
-//     {
-//         guestName: "Omer",
-//         isComing: false
-//     },
-//     {
-//         guestName: "Fahad",
-//         isComing: true
-//     }
-// ]
-// let updatedGuestList: string[] = [];
+let guests: guest[] = [
+    {
+        guestName: "Ali",
+        isComing: true
+    },
+    {
+        guestName: "Omer",
+        isComing: false
+    },
+    {
+        guestName: "Fahad",
+        isComing: true
+    }
+]
+let updatedGuestList: string[] = [];
 
-// for (let i: number = 0; i < guests.length; i++) {
-//     if (guests[i].isComing === false) {
-//         guests[i].guestName = "Abdullah";
-//         guests[i].isComing = true;
-//     }
-//     updatedGuestList.push(guests[i].guestName);
-// }
+for (let i: number = 0; i < guests.length; i++) {
+    if (guests[i].isComing === false) {
+        guests[i].guestName = "Abdullah";
+        guests[i].isComing = true;
+    }
+    updatedGuestList.push(guests[i].guestName);
+}
 
 // for (let i: number = 0; i < updatedGuestList.length; i++)
 // console.log(updatedGuestList[i], "you are invited to dinner @ 8:00 PM Saturday Night!!");
@@ -200,11 +200,11 @@
 • Print a new set of invitation messages, one for each person in your list.
 **********************************************************************************************************************/
 
-// console.log("I found a bigger table");
+console.log("I found a bigger table");
 
-// updatedGuestList.unshift("Raza"); //Added at the begining
-// updatedGuestList.push("Zaini"); //Added at the End
-// updatedGuestList.splice(updatedGuestList.length / 2, 0, "Farhan"); //Added in the middle
+updatedGuestList.unshift("Raza"); //Added at the begining
+updatedGuestList.push("Zaini"); //Added at the End
+updatedGuestList.splice(updatedGuestList.length / 2, 0, "Farhan"); //Added in the middle
 
 // for (let i: number = 0; i < updatedGuestList.length; i++)
 //     console.log(updatedGuestList[i], "you are invited to dinner @ 8:00 PM Saturday Night!!");
@@ -219,21 +219,21 @@
 • Print a message to each of the two people still on your list, letting them know they’re still invited.
 • Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.
 ********************************************************************************************************************* */
-// console.log('I invited only 2 people for dinner');
+console.log('I invited only 2 people for dinner');
 
-// let uninvitedGuests: string[] = [];
-// let totalguest = updatedGuestList.length;
+let uninvitedGuests: string[] = [];
+let totalguest = updatedGuestList.length;
 
-// for (let i: number = 0; i <= totalguest; i++) {
-//     if (i < totalguest - 2)
-//     uninvitedGuests.push(updatedGuestList.shift() as string);
-// }
+for (let i: number = 0; i < totalguest; i++) {
+    if (i < totalguest - 2)
+    uninvitedGuests.push(updatedGuestList.shift() as string);
+}
 
-// for (let i: number = 0; i < uninvitedGuests.length; i++)
-//     console.log(uninvitedGuests[i], "Sorry you are uninvited to dinner!!");
+for (let i: number = 0; i < uninvitedGuests.length; i++)
+    console.log(uninvitedGuests[i], "Sorry you are uninvited to dinner!!");
 
-// for (let i: number = 0; i < updatedGuestList.length; i++)
-//     console.log(updatedGuestList[i], "you are still invited to dinner @ 8:00 PM Saturday Night!!");
+for (let i: number = 0; i < updatedGuestList.length; i++)
+    console.log(updatedGuestList[i], "you are still invited to dinner @ 8:00 PM Saturday Night!!");
 /*********************************************************************************************************************
 
 18. Seeing the World: Think of at least five places in the world you’d like to visit.
@@ -251,32 +251,39 @@
 
 **********************************************************************************************************************/
 
-let desiredPlaces: string[] = ['NewYork', 'London', 'SwitzerLand', 'AbuDahbi', 'Paris'];
-let originalOrder: string[] = [];
+// let desiredPlaces: string[] = ['NewYork', 'London', 'SwitzerLand', 'AbuDahbi', 'Paris'];
+// let originalOrder: string[] = [];
 
-desiredPlaces.forEach(n => originalOrder.push(n));
+// desiredPlaces.forEach(n => originalOrder.push(n));
 
-console.log("Original Order: ", originalOrder);
-console.log("Alphabetical Order: ", desiredPlaces.sort());
-console.log("Original Order: ", originalOrder);
-console.log("Reverse Order: ", desiredPlaces.reverse());
-console.log("Original Order: ",originalOrder);
-console.log("Original (Reverse Order)", originalOrder.reverse());
-console.log("Original (Reverse Order) Again", originalOrder.reverse());
-console.log("Alphabetical Order: ", originalOrder.sort((a, b) => a.localeCompare(b)));
-console.log("Reverse Alphabetical Order: ", originalOrder.sort((a, b) => b.localeCompare(a)));
+// console.log("Original Order: ", originalOrder);
+// console.log("Alphabetical Order: ", desiredPlaces.sort());
+// console.log("Original Order: ", originalOrder);
+// console.log("Reverse Order: ", desiredPlaces.reverse());
+// console.log("Original Order: ",originalOrder);
+// console.log("Original (Reverse Order)", originalOrder.reverse());
+// console.log("Original (Reverse Order) Again", originalOrder.reverse());
+// console.log("Alphabetical Order: ", originalOrder.sort((a, b) => a.localeCompare(b)));
+// console.log("Reverse Alphabetical Order: ", originalOrder.sort((a, b) => b.localeCompare(a)));
+/**********************************************************************************************************************/
 
+// 19. Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.
+/**********************************************************************************************************************/
+console.log('I invited', updatedGuestList.length, 'people for dinner'); // Message indicating the number of people invited
 
 /**********************************************************************************************************************/
 
-
-// 19. Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.
-
 // 20. Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
+/**********************************************************************************************************************/
+/**********************************************************************************************************************/
 
 // 21. They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
+/**********************************************************************************************************************/
+/**********************************************************************************************************************/
 
 // 22. Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
+/**********************************************************************************************************************/
+/**********************************************************************************************************************/
 
 
 /*********************************************************************************************************************
