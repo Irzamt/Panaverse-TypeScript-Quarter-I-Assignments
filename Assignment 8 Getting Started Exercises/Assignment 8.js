@@ -342,60 +342,71 @@ console.log(car == 'subaru')
 ***************************************************************************************************************************/
 // Tests for equality and inequality with strings:
 // Equality Test with Strings (True)
-let str1 = "apple";
-let str2 = "apple";
-console.log("Is str1 equal to str2? I predict True.");
-console.log(str1 === str2); // True
-// Inequality Test with Strings (False)
-let str3 = "banana";
-let str4 = "apple";
-console.log("Is str3 not equal to str4? I predict False.");
-console.log(str3 === str4); // False
-// Tests using the toLowerCase function:
-// Lowercase Test (True)
-let word1 = "HELLO";
-let word2 = "hello";
-console.log("Is word1.toLowerCase() equal to word2? I predict True.");
-console.log(word1.toLowerCase() === word2); // True
-// Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to:
-// Greater Than Test (True)
-let num1 = 10;
-let num2 = 5;
-console.log("Is num1 greater than num2? I predict True.");
-console.log(num1 > num2); // True
-// Less Than or Equal To Test (False)
-let num3 = 15;
-let num4 = 10;
-console.log("Is num3 less than or equal to num4? I predict False.");
-console.log(num3 <= num4); // False
-// Tests using "and" and "or" operators:
-// Logical OR Test (True)
-let isSunny = true;
-let isWarm = false;
-console.log("Is it sunny or warm? I predict True.");
-console.log(isSunny || isWarm); // True
-// Logical AND Test (False)
-let isRaining = true;
-let isWindy = false;
-console.log("Is it raining and windy? I predict False.");
-console.log(isRaining && isWindy); // False
-// Test whether an item is in an array:
-// Array Includes Test (True)
-let fruits = ["apple", "banana", "cherry"];
-let searchFruit = "banana";
-console.log(`Is ${searchFruit} in the fruits array? I predict True.`);
-console.log(fruits.includes(searchFruit)); // True
-// Test whether an item is not in an array:
-// Array Excludes Test (False)
-let colors = ["red", "green", "blue"];
-let searchColor = "yellow";
-console.log(`Is ${searchColor} not in the colors array? I predict False.`);
-console.log(!colors.includes(searchColor)); // False
+// let str1: string = "apple";
+// let str2: string = "apple";
+// console.log("Is str1 equal to str2? I predict True.");
+// console.log(str1 === str2); // True
+// // Inequality Test with Strings (False)
+// let str3: string = "banana";
+// let str4: string = "apple";
+// console.log("Is str3 not equal to str4? I predict False.");
+// console.log(str3 === str4); // False
+// // Tests using the toLowerCase function:
+// // Lowercase Test (True)
+// let word1: string = "HELLO";
+// let word2: string = "hello";
+// console.log("Is word1.toLowerCase() equal to word2? I predict True.");
+// console.log(word1.toLowerCase() === word2); // True
+// // Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to:
+// // Greater Than Test (True)
+// let num1: number = 10;
+// let num2: number = 5;
+// console.log("Is num1 greater than num2? I predict True.");
+// console.log(num1 > num2); // True
+// // Less Than or Equal To Test (False)
+// let num3: number = 15;
+// let num4: number = 10;
+// console.log("Is num3 less than or equal to num4? I predict False.");
+// console.log(num3 <= num4); // False
+// // Tests using "and" and "or" operators:
+// // Logical OR Test (True)
+// let isSunny: boolean = true;
+// let isWarm: boolean = false;
+// console.log("Is it sunny or warm? I predict True.");
+// console.log(isSunny || isWarm); // True
+// // Logical AND Test (False)
+// let isRaining: boolean = true;
+// let isWindy: boolean = false;
+// console.log("Is it raining and windy? I predict False.");
+// console.log(isRaining && isWindy); // False
+// // Test whether an item is in an array:
+// // Array Includes Test (True)
+// let fruits: string[] = ["apple", "banana", "cherry"];
+// let searchFruit: string = "banana";
+// console.log(`Is ${searchFruit} in the fruits array? I predict True.`);
+// console.log(fruits.includes(searchFruit)); // True
+// // Test whether an item is not in an array:
+// // Array Excludes Test (False)
+// let colors: string[] = ["red", "green", "blue"];
+// let searchColor: string = "yellow";
+// console.log(`Is ${searchColor} not in the colors array? I predict False.`);
+// console.log(!colors.includes(searchColor)); // False
 /*********************************************************************************************************************
 25. Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
 • Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
 • Write one version of this program that passes the if test and another that fails. (The version that fails will have no output.)
 ***************************************************************************************************************************/
+// let  alien_color: string = 'green'
+// let points: number = 0
+// if (alien_color === 'green'){
+//     points += 5
+//     console.log(`Player just earned ${points} points`);
+// }
+//Other Version
+let alien_color_fail = 'red';
+if (alien_color_fail === 'green') {
+    console.log("Congratulations! You just earned 5 points.");
+}
 /*********************************************************************************************************************
 26. Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
 • If the alien’s color is green, print a statement that the player just earned 5 points for shooting the alien.
