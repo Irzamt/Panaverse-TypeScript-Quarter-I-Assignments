@@ -1,12 +1,13 @@
-// 2. Personal Message: Store a person’s name in a variable, and print a message to that person. Your message should be simple, such as, “Hello Eric, would you like to learn some Python today?”
-/********************************************************************************************************************* */
+/*
+2. Personal Message: Store a person’s name in a variable, and print a message to that person. Your message should be simple, such as, “Hello Eric, would you like to learn some Python today?”
+********************************************************************************************************************* */
 // let userName:string = "Hello Irzam, Would you like to learn some TypeScript Today?";
 
 // console.log(userName);
-/********************************************************************************************************************* */
+/**********************************************************************************************************************
 
-// 3. Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.
-/********************************************************************************************************************* */
+3. Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and titlecase.
+********************************************************************************************************************* */
 // let userName2: string = "jOhN";
 
 // let lower: string = userName2.toLowerCase();
@@ -17,34 +18,34 @@
 //     .join(' ');
 
 // console.log(`Name: ${userName2}\nLower Case: ${lower}\nUpper Case: ${upper}\nTitle Case: ${title}`);
-/********************************************************************************************************************* */
+/*********************************************************************************************************************
 
-// 4. Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author. Your output should look something like the following, including the quotation marks:  Albert Einstein once said, “A person who never made a mistake never tried anything new.”
-/********************************************************************************************************************* */
+4. Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author. Your output should look something like the following, including the quotation marks:  Albert Einstein once said, “A person who never made a mistake never tried anything new.”
+********************************************************************************************************************* */
 // let quote:string = 'Albert Einstein once said, “A person who never made a mistake never tried anything new.”';
 
 // console.log(quote);
-/********************************************************************************************************************* */
+/*********************************************************************************************************************
 
-// 5. Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name in a variable called famous_person. Then compose your message and store it in a new variable called message. Print your message.
-/********************************************************************************************************************* */
+5. Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name in a variable called famous_person. Then compose your message and store it in a new variable called message. Print your message.
+********************************************************************************************************************* 
 // let famous_person: string = "Albert Einstein";
 // let message: string = '“A person who never made a mistake never tried anything new.”';
 
 // console.log(`${famous_person} once said, ${message}`);
-/********************************************************************************************************************* */
+/*********************************************************************************************************************
 
-// 6. Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.
-/********************************************************************************************************************* */
+6. Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.
+********************************************************************************************************************* */
 // let name1: string = "\t\n   Irzam   \t\n";
 
 // let strip: string = name1.trim()
 
 // console.log(`With Whitespace: ${name1}\n Without Whitespace: ${strip} `);
-/********************************************************************************************************************* */
+/*********************************************************************************************************************
 
-// 7. Number Eight: Write addition, subtraction, multiplication, and division operations that each result in the number 8. Be sure to enclose your operations in print statements to see the results.
-/********************************************************************************************************************* */
+7. Number Eight: Write addition, subtraction, multiplication, and division operations that each result in the number 8. Be sure to enclose your operations in print statements to see the results.
+********************************************************************************************************************* */
 // Addition: 12 + (-4) = 8
 // console.log("Addition:", 12 + (-4));
 
@@ -56,13 +57,13 @@
 
 // // Division: 16 / 2 = 8
 // console.log("Division:", 16 / 2);
-// /********************************************************************************************************************* */
+/*********************************************************************************************************************
 
-// 8. You should create four lines that look like this:
-// _____________________________________________
-// console.log(5 + 3)
-// _____________________________________________
-// Your output should simply be four lines with the number 8 appearing once on each line.
+8. You should create four lines that look like this:
+_____________________________________________
+console.log(5 + 3)
+_____________________________________________
+Your output should simply be four lines with the number 8 appearing once on each line.
 /********************************************************************************************************************* */
 //_____________________________________________
 // console.log(5 + 3);
@@ -79,17 +80,17 @@
 // // _____________________________________________
 // console.log(16 / 2);
 // _____________________________________________
-/********************************************************************************************************************* */
+/*********************************************************************************************************************
 
-// 9. Favorite Number: Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message.
-/********************************************************************************************************************* */
+9. Favorite Number: Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message.
+********************************************************************************************************************* */
 // let favNum: number = 4;
 
 // console.log(`My favourite Bumber is: ${favNum}`);
-/********************************************************************************************************************* */
+/*********************************************************************************************************************
 
-// 10. Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. If you don’t have anything specific to write because your programs are too simple at this point, just add your name and the current date at the top of each program file. Then write one sentence describing what the program does.
-/********************************************************************************************************************* */
+10. Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. If you don’t have anything specific to write because your programs are too simple at this point, just add your name and the current date at the top of each program file. Then write one sentence describing what the program does.
+********************************************************************************************************************* */
 //Program 1:
 // let userName3: string = "jOhN";
 
@@ -106,34 +107,34 @@
 // let favNum2: number = 4;
 
 // console.log(`My favourite Bumber is: ${favNum2}`); // My favourite Number is printed
-// /********************************************************************************************************************* */
+/*********************************************************************************************************************
 
-// // 11. Names: Store the names of a few of your friends in a array called names. Print each person’s name by accessing each element in the list, one at a time.
-// /********************************************************************************************************************* */
+11. Names: Store the names of a few of your friends in a array called names. Print each person’s name by accessing each element in the list, one at a time.
+********************************************************************************************************************* */
 // let names: string[] = ['Ali', 'Fahad', 'Omer'];
 
 // for (let i: number = 0; i < names.length; i++)
 //     console.log(names[i]);
-// /********************************************************************************************************************* */
+/*********************************************************************************************************************
 
-// // 12. Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message should be the same, but each message should be personalized with the person’s name.
-// /********************************************************************************************************************* */
+12. Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message should be the same, but each message should be personalized with the person’s name.
+********************************************************************************************************************* */
 // let names4: string[] = ['Ali', 'Fahad', 'Omer'];
 
 // for (let i: number = 0; i < names4.length; i++)
 //     console.log(names4[i], ", Tu n mera 500 wapis kb dena h?");
-// /********************************************************************************************************************* */
+/*********************************************************************************************************************
 
-// // 13. Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
-// /********************************************************************************************************************* */
+13. Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
+********************************************************************************************************************* */
 // let vehicles: string[] = ['Lexus', 'Mercedes', 'Rolls Royce']
 
 // for (let i: number = 0; i < vehicles.length; i++)
 //     console.log("I would like to own a ", vehicles[i]);
-/********************************************************************************************************************* */
+/*********************************************************************************************************************
 
-// 14. Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
-/********************************************************************************************************************* */
+14. Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
+********************************************************************************************************************* */
 // type guest = { guestName: string};
 
 // let guests: guest[] = [
@@ -187,8 +188,6 @@
 
 // for (let i: number = 0; i < updatedGuestList.length; i++)
 // console.log(updatedGuestList[i], "you are invited to dinner @ 8:00 PM Saturday Night!!");
-
-
 /*********************************************************************************************************************
 
 16. More Guests: You just found a bigger dinner table, so now more space is available. Think of three more guests to invite to dinner.
@@ -199,7 +198,6 @@
 • Use append() to add one new guest to the end of your list.
 • Print a new set of invitation messages, one for each person in your list.
 **********************************************************************************************************************/
-
 // console.log("I found a bigger table");
 
 // updatedGuestList.unshift("Raza"); //Added at the begining
@@ -208,8 +206,6 @@
 
 // for (let i: number = 0; i < updatedGuestList.length; i++)
 //     console.log(updatedGuestList[i], "you are invited to dinner @ 8:00 PM Saturday Night!!");
-
-
 /*********************************************************************************************************************
 
 17. Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
@@ -250,7 +246,6 @@
 • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
 
 **********************************************************************************************************************/
-
 // let desiredPlaces: string[] = ['NewYork', 'London', 'SwitzerLand', 'AbuDahbi', 'Paris'];
 // let originalOrder: string[] = [];
 
@@ -265,38 +260,74 @@
 // console.log("Original (Reverse Order) Again", originalOrder.reverse());
 // console.log("Alphabetical Order: ", originalOrder.sort((a, b) => a.localeCompare(b)));
 // console.log("Reverse Alphabetical Order: ", originalOrder.sort((a, b) => b.localeCompare(a)));
-/**********************************************************************************************************************/
+/**********************************************************************************************************************
 
-// 19. Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.
+19. Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.
 /**********************************************************************************************************************/
 // console.log('I invited', updatedGuestList.length, 'people for dinner'); // Message indicating the number of people invited
+/**********************************************************************************************************************
 
+20. Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
+**********************************************************************************************************************/
+// let countries: string[] = [
+//     "United States",
+//     "Canada",
+//     "United Kingdom",
+//     "France",
+//     "Germany",
+//     "Australia",
+//     "Japan",
+//     "Brazil",
+//     "India",
+//     "China"
+// ];
+
+// console.log("List of Countries:");
+// for (let i = 0; i < countries.length; i++) {
+//     console.log(countries[i]);
+// }
+/**********************************************************************************************************************
+
+21. They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
 /**********************************************************************************************************************/
+// type Car = { Sr: number, make: string, model: string, year: number, color: string};
 
-// 20. Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
-/**********************************************************************************************************************/
-let countries: string[] = [
-    "United States",
-    "Canada",
-    "United Kingdom",
-    "France",
-    "Germany",
-    "Australia",
-    "Japan",
-    "Brazil",
-    "India",
-    "China"
-];
+// const cars: Car[] = [
+//     {
+//         Sr: 1,
+//         make: "Toyota",
+//         model: "Camry",
+//         year: 2022,
+//         color: "Silver",
+//     },
+//     {
+//         Sr: 2,
+//         make: "Honda",
+//         model: "Civic",
+//         year: 2021,
+//         color: "Blue",
+//     },
+//     {
+//         Sr: 3,
+//         make: "Ford",
+//         model: "Mustang",
+//         year: 2023,
+//         color: "Red",
+//     },
+//     {
+//         Sr: 4,
+//         make: "Chevrolet",
+//         model: "Equinox",
+//         year: 2020,
+//         color: "Black",
+//     },
+// ];
 
-console.log("List of Countries:");
-for (let i = 0; i < countries.length; i++) {
-    console.log(countries[i]);
-}
+// console.log("List of Cars:");
+// for (let i:number = 0; i < cars.length; i++) {
+//     console.log(`Sr # ${cars[i].Sr}: Make: ${cars[i].make}, Model: ${cars[i].model}, Year: ${cars[i].year}, Color: ${cars[i].color}`);
+// }
 
-/**********************************************************************************************************************/
-
-// 21. They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
-/**********************************************************************************************************************/
 /**********************************************************************************************************************/
 
 // 22. Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
