@@ -275,6 +275,24 @@
 
 // 20. Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
 /**********************************************************************************************************************/
+let countries: string[] = [
+    "United States",
+    "Canada",
+    "United Kingdom",
+    "France",
+    "Germany",
+    "Australia",
+    "Japan",
+    "Brazil",
+    "India",
+    "China"
+];
+
+console.log("List of Countries:");
+for (let i = 0; i < countries.length; i++) {
+    console.log(countries[i]);
+}
+
 /**********************************************************************************************************************/
 
 // 21. They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
