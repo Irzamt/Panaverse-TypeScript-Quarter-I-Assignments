@@ -719,10 +719,21 @@ console.log(car == 'subaru')
 • Modify your program to print a statement about each animal, such as A dog would make a great pet.
 • Add a line at the end of your program stating what these animals have in common. You could print a sentence such as Any of these animals would make a great pet!
 ***************************************************************************************************************************/
+// const animals: string[] = ['dog', 'cat', 'mouse'];
+
+// animals.forEach(n => console.log(`A ${n} would make a great pet!!!`));
+
+// console.log('\nThey are all domesticated animals');
 
 /*********************************************************************************************************************
 36. T-Shirt: Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt. The function should print a sentence summarizing the size of the shirt and the message printed on it. Call the function.
 ***************************************************************************************************************************/
+function make_shirt (size: number, text:string){
+    
+   return `The shirt is of size: ${size}\n"${text}"`;
+}
+
+console.log(make_shirt(45, "This is a great shirt"));
 
 /*********************************************************************************************************************
 37. Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.

@@ -601,18 +601,28 @@ console.log(car == 'subaru')
 • Modify your for loop to print a sentence using the name of the pizza instead of printing just the name of the pizza. For each pizza you should have one line of output containing a simple statement like I like pepperoni pizza.
 • Add a line at the end of your program, outside the for loop, that states how much you like pizza. The output should consist of three or more lines about the kinds of pizza you like and then an additional sentence, such as I really love pizza!
 ***************************************************************************************************************************/
-const myPizza = ['tikka', 'fajita', 'pepperoni'];
-myPizza.forEach((n, i) => {
-    console.log(i, `I like ${n}!!`);
-});
+// const myPizza:string[] = ['tikka', 'fajita', 'pepperoni'];
+// myPizza.forEach(n => {
+//     console.log(`I like ${n}!!`);
+// });
+// console.log(`I can't resist the deliciousness of Pepperoni.`);
+// console.log(`Margherita's simplicity is a culinary masterpiece.`);
+// console.log(`The sweetness of Hawaiian pizza is simply amazing.`);
 /*********************************************************************************************************************
 35. Animals: Think of at least three different animals that have a common characteristic. Store the names of these animals in a list, and then use a for loop to print out the name of each animal.
 • Modify your program to print a statement about each animal, such as A dog would make a great pet.
 • Add a line at the end of your program stating what these animals have in common. You could print a sentence such as Any of these animals would make a great pet!
 ***************************************************************************************************************************/
+// const animals: string[] = ['dog', 'cat', 'mouse'];
+// animals.forEach(n => console.log(`A ${n} would make a great pet!!!`));
+// console.log('\nThey are all domesticated animals');
 /*********************************************************************************************************************
 36. T-Shirt: Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt. The function should print a sentence summarizing the size of the shirt and the message printed on it. Call the function.
 ***************************************************************************************************************************/
+function make_shirt(size, text) {
+    return `The shirt is of size: ${size}\n"${text}"`;
+}
+console.log(make_shirt(45, "This is a great shirt"));
 /*********************************************************************************************************************
 37. Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
 ***************************************************************************************************************************/
