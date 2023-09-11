@@ -678,21 +678,34 @@ Call your function with at least three city-country pairs, and print the value t
 /*********************************************************************************************************************
 43. Unchanged Magicians: Start with your work from Exercise 40. Call the function make_great() with a copy of the array of magicians’ names. Because the original array will be unchanged, return the new array and store it in a separate array. Call show_magicians() with each array to show that you have one array of the original names and one array with the Great added to each magician’s name.
 ***************************************************************************************************************************/
-function show_magicians(magician) {
-    magician.forEach(n => console.log(n));
-}
-function make_great(magician) {
-    return magician.map(n => `Great Magician ${n}`);
-}
-const originalMagicians = ["Raza", "Fahad", "Ahmad"];
-const greatMagician = make_great([...originalMagicians]); // Create a copy of the original array
-console.log("Original Magicians:");
-show_magicians(originalMagicians);
-console.log("\nGreat Magicians:");
-show_magicians(greatMagician);
+// function show_magicians(magician: string[]) {
+//     magician.forEach(n => console.log(n));
+// }
+// function make_great(magician: string[]):string[] {
+//     return magician.map(n => `Great Magician ${n}`);
+// }
+// const originalMagicians: string[] = ["Raza", "Fahad", "Ahmad"];
+// const greatMagician: string[] = make_great([...originalMagicians]); // Create a copy of the original array
+// console.log("Original Magicians:");
+// show_magicians(originalMagicians);
+// console.log("\nGreat Magicians:");
+// show_magicians(greatMagician);
 /*********************************************************************************************************************
 44. Sandwiches: Write a function that accepts a array of items a person wants on a sandwich. The function should have one parameter that collects as many items as the function call provides, and it should print a summary of the sandwich that is being ordered. Call the function three times, using a different number of arguments each time.
 ***************************************************************************************************************************/
+function makeSandwich(sandwichItems) {
+    console.log("Sandwich Summary:");
+    if (sandwichItems.length === 0) {
+        return "You ordered an empty sandwich.\n";
+    }
+    else {
+        console.log("You ordered a sandwich with the following items:");
+        return sandwichItems.map(item => `- ${item}\n`);
+    }
+}
+console.log(makeSandwich([]));
+console.log(makeSandwich(['Turkey', 'Beef']));
+console.log(makeSandwich(['Turkey', 'Beef', 'Fajitas']));
 /*********************************************************************************************************************
 45. Cars: Write a function that stores information about a car in a Object. The function should always receive a manufacturer and a model name. It should then accept an arbitrary number of keyword arguments. Call the function with the required information and two other name-value pairs, such as a color or an optional feature. Print the Object that’s returned to make sure all the information was stored correctly.
 ***************************************************************************************************************************/ 
