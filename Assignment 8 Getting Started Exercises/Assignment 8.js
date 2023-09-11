@@ -626,18 +626,24 @@ console.log(car == 'subaru')
 /*********************************************************************************************************************
 37. Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
 ***************************************************************************************************************************/
-function make_shirt(size = "Large", text = "I love TypeScript") {
-    return `The shirt is of size: ${size}\n"${text}"`;
-}
-// Large shirt with the Default Message
-console.log(make_shirt());
-// Medium shirt with the Default Message
-console.log(make_shirt("Medium"));
-//Shirt of any size and different message
-console.log(make_shirt("Small", "This is a great shirt"));
+// function make_shirt(size: string = "Large", text: string = "I love TypeScript"): string {
+//     return `The shirt is of size: ${size}\n"${text}"`;
+// }
+// // Large shirt with the Default Message
+// console.log(make_shirt());
+// // Medium shirt with the Default Message
+// console.log(make_shirt("Medium"));
+// //Shirt of any size and different message
+// console.log(make_shirt("Small", "This is a great shirt"));
 /*********************************************************************************************************************
 38. Cities: Write a function called describe_city() that accepts the name of a city and its country. The function should print a simple sentence, such as Karachi is in Pakistan. Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default country.
 ***************************************************************************************************************************/
+// function describe_city (city:string, country:string = 'Pakistan'):string{
+//     return `${city} is in ${country}`;
+// }
+// console.log(describe_city ('Lahore'));
+// console.log(describe_city ('Multan'));
+// console.log(describe_city ('Paris'));
 /*********************************************************************************************************************
 39. City Names: Write a function called city_country() that takes in the name of a city and its country. The function should return a string formatted like this:
  
@@ -645,6 +651,12 @@ console.log(make_shirt("Small", "This is a great shirt"));
  
 Call your function with at least three city-country pairs, and print the value that’s returned.
 ***************************************************************************************************************************/
+function city_country(city, country) {
+    return `${city}, ${country}`;
+}
+console.log(city_country("Lahore", "Pakistan"));
+console.log(city_country("Paris", "Italy"));
+console.log(city_country("NewYork", "U.S.A"));
 /*********************************************************************************************************************
 40. Album: Write a function called make_album() that builds a Object describing a music album. The function should take in an artist name and an album title, and it should return a Object containing these two pieces of information. Use the function to make three dictionaries representing different albums. Print each return value to show that Objects are storing the album information correctly. Add an optional parameter to make_album() that allows you to store the number of tracks on an album. If the calling line includes a value for the number of tracks, add that value to the album’s Object. Make at least one new function call that includes the number of tracks on an album.
 ***************************************************************************************************************************/
