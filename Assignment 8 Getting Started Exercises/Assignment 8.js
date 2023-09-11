@@ -548,17 +548,17 @@ console.log(car == 'subaru')
 • Remove all of the usernames from your array, and make sure the correct message is printed.
 ***************************************************************************************************************************/
 // const usernames: string[] = ["admin", "Eric", "Alice", "Bob", "Charlie"];
-const usernames = [];
-if (usernames.length === 0)
-    console.log('We need to find some users!');
-else {
-    for (let i = 0; i < usernames.length; i++) {
-        if (usernames[i] === "admin")
-            console.log("Hello admin, would you like to see a status report?");
-        else
-            console.log(`Hello ${usernames[i]}, thank you for logging in again.`);
-    }
-}
+// const usernames: string[] = []; // Empty List
+// if (usernames.length === 0)
+//     console.log('We need to find some users!');
+// else {
+//     for (let i: number = 0; i < usernames.length; i++) {
+//         if (usernames[i] === "admin")
+//             console.log("Hello admin, would you like to see a status report?");
+//         else
+//             console.log(`Hello ${usernames[i]}, thank you for logging in again.`);
+//     }
+// }
 /*********************************************************************************************************************
 32. Checking Usernames: Do the following to create a program that simulates how websites ensure that everyone has a unique username.
 • Make a list of five or more usernames called current_users.
@@ -566,6 +566,20 @@ else {
 • Loop through the new_users list to see if each new username has already been used. If it has, print a message that the person will need to enter a new username. If a username has not been used, print a message saying that the username is available.
 • Make sure your comparison is case insensitive. If 'John' has been used, 'JOHN' should not be accepted.
 ***************************************************************************************************************************/
+const currentUsers = ['John', 'Alice', 'Eric', 'Mary', 'Sarah'];
+const newUsers = ['mary', 'Bob', 'Eric', 'Samantha', 'John'];
+// Convert currentUsers to lowercase for case-insensitive comparison
+const currentUsersLower = currentUsers.map(n => n.toLowerCase());
+console.log(currentUsersLower);
+// for (const newUser of newUsers) {
+//     // Convert newUser to lowercase for case-insensitive comparison
+//     const newUserLower: string = newUser.toLowerCase();
+//     if (currentUsersLower.includes(newUserLower)) {
+//         console.log(`Sorry, the username '${newUser}' is already taken. Please enter a new username.`);
+//     } else {
+//         console.log(`The username '${newUser}' is available.`);
+//     }
+// }
 /*********************************************************************************************************************
 33. Ordinal Numbers: Ordinal numbers indicate their position in a array, such as 1st or 2nd. Most ordinal numbers end in th, except 1, 2, and 3.
  • Store the numbers 1 through 9 in a array.
