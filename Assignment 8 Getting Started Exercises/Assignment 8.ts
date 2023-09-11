@@ -663,29 +663,21 @@ console.log(car == 'subaru')
 • Loop through the new_users list to see if each new username has already been used. If it has, print a message that the person will need to enter a new username. If a username has not been used, print a message saying that the username is available.
 • Make sure your comparison is case insensitive. If 'John' has been used, 'JOHN' should not be accepted.
 ***************************************************************************************************************************/
-const currentUsers: string[] = ['John', 'Alice', 'Eric', 'Mary', 'Sarah'];
-const newUsers: string[] = ['mary', 'Bob', 'Eric', 'Samantha', 'John'];
+// const currentUsers: string[] = ['John', 'Alice', 'Eric', 'Mary', 'Sarah'];
+// const newUsers: string[] = ['mary', 'Bob', 'Eric', 'Samantha', 'John'];
 
-// Convert currentUsers to lowercase for case-insensitive comparison
-const currentUsersLower:string[] = currentUsers.map(n => n.toLowerCase());
-console.log(currentUsersLower);
+// // Convert currentUsers to lowercase for case-insensitive comparison
+// const currentUsersLower:string[] = currentUsers.map(n => n.toLowerCase());
+// console.log(currentUsersLower);
 
-// Convert newUser to lowercase for case-insensitive comparison
-for(let i:number = 0; i < newUsers.length; i++){
-    const newUrsersLower: string = newUsers[i].toLowerCase();
-    if (currentUsersLower.includes(newUrsersLower))
-        console.log(`Sorry, the username ${newUsers}`);
-        
-}
+// // Convert newUser to lowercase for case-insensitive comparison
+// for(let i:number = 0; i < newUsers.length; i++){
+//     const newUrsersLower: string = newUsers[i].toLowerCase();
 
-// for (const newUser of newUsers) {
-//     const newUserLower: string = newUser.toLowerCase();
-
-//     if (currentUsersLower.includes(newUserLower)) {
-//         console.log(`Sorry, the username '${newUser}' is already taken. Please enter a new username.`);
-//     } else {
-//         console.log(`The username '${newUser}' is available.`);
-//     }
+//     if (currentUsersLower.includes(newUrsersLower))
+//         console.log(`Sorry, the username "${newUsers[i]}" is already taken. Please enter a new username.`);
+//     else
+//     console.log(`The username "${newUsers[i]}" is available.`);
 // }
 
 /*********************************************************************************************************************

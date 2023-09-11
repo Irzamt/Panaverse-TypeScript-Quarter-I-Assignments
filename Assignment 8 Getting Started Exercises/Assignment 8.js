@@ -571,8 +571,15 @@ const newUsers = ['mary', 'Bob', 'Eric', 'Samantha', 'John'];
 // Convert currentUsers to lowercase for case-insensitive comparison
 const currentUsersLower = currentUsers.map(n => n.toLowerCase());
 console.log(currentUsersLower);
+// Convert newUser to lowercase for case-insensitive comparison
+for (let i = 0; i < newUsers.length; i++) {
+    const newUrsersLower = newUsers[i].toLowerCase();
+    if (currentUsersLower.includes(newUrsersLower))
+        console.log(`Sorry, the username "${newUsers[i]}" is already taken. Please enter a new username.`);
+    else
+        console.log(`The username "${newUsers[i]}" is available.`);
+}
 // for (const newUser of newUsers) {
-//     // Convert newUser to lowercase for case-insensitive comparison
 //     const newUserLower: string = newUser.toLowerCase();
 //     if (currentUsersLower.includes(newUserLower)) {
 //         console.log(`Sorry, the username '${newUser}' is already taken. Please enter a new username.`);
