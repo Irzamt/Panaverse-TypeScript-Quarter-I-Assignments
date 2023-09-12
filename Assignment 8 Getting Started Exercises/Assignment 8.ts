@@ -779,21 +779,21 @@ Call your function with at least three city-country pairs, and print the value t
 /*********************************************************************************************************************
 40. Album: Write a function called make_album() that builds a Object describing a music album. The function should take in an artist name and an album title, and it should return a Object containing these two pieces of information. Use the function to make three dictionaries representing different albums. Print each return value to show that Objects are storing the album information correctly. Add an optional parameter to make_album() that allows you to store the number of tracks on an album. If the calling line includes a value for the number of tracks, add that value to the album’s Object. Make at least one new function call that includes the number of tracks on an album.
 ***************************************************************************************************************************/
-type album = {artistName: string; albumTitle: string; tracks?: number}
+// type album = {artistName: string; albumTitle: string; tracks?: number}
 
-function make_album (artist: string, title: string, track?: number): album{
-    let myAlbum: album = {
-        artistName: artist,
-        albumTitle: title,
-    };
-    if (track !== undefined)
-        myAlbum.tracks = track;
-    return myAlbum;
-}
+// function make_album (artist: string, title: string, track?: number): album{
+//     let myAlbum: album = {
+//         artistName: artist,
+//         albumTitle: title,
+//     };
+//     if (track !== undefined)
+//         myAlbum.tracks = track;
+//     return myAlbum;
+// }
 
-console.log(make_album('Artist 1', 'Album 1', 10));
-console.log(make_album('Artist 2', 'Album 2'));
-console.log(make_album('Artist 3', 'Album 1', 16));
+// console.log(make_album('Artist 1', 'Album 1', 10));
+// console.log(make_album('Artist 2', 'Album 2'));
+// console.log(make_album('Artist 3', 'Album 1', 16));
 
 
 /*********************************************************************************************************************
@@ -854,3 +854,28 @@ console.log(make_album('Artist 3', 'Album 1', 16));
 /*********************************************************************************************************************
 45. Cars: Write a function that stores information about a car in a Object. The function should always receive a manufacturer and a model name. It should then accept an arbitrary number of keyword arguments. Call the function with the required information and two other name-value pairs, such as a color or an optional feature. Print the Object that’s returned to make sure all the information was stored correctly.
 ***************************************************************************************************************************/
+// type CarType = {
+//     manufacturerT: string;
+//     modelT: string;
+//     colorT?: string; // Make color optional with "?"
+//     modelNumberT?: number; // Make modelNumber optional with "?"
+// };
+
+// function car(manufacturer: string, model: string, color?: string, modelNumber?: number): CarType {
+//     let myCar: CarType = {
+//         manufacturerT: manufacturer,
+//         modelT: model,
+//     };
+
+//     if (color !== undefined)
+//         myCar.colorT = color;
+//     if (modelNumber !== undefined)
+//         myCar.modelNumberT = modelNumber;
+
+//     return myCar;
+// }
+
+
+// const myCar = car('Toyota', 'Camry', 'Blue', 2023);
+// console.log(myCar);
+
