@@ -779,7 +779,22 @@ Call your function with at least three city-country pairs, and print the value t
 /*********************************************************************************************************************
 40. Album: Write a function called make_album() that builds a Object describing a music album. The function should take in an artist name and an album title, and it should return a Object containing these two pieces of information. Use the function to make three dictionaries representing different albums. Print each return value to show that Objects are storing the album information correctly. Add an optional parameter to make_album() that allows you to store the number of tracks on an album. If the calling line includes a value for the number of tracks, add that value to the album’s Object. Make at least one new function call that includes the number of tracks on an album.
 ***************************************************************************************************************************/
-// function make_album ()
+type album = {artistName: string; albumTitle: string; tracks?: number}
+
+function make_album (artist: string, title: string, track?: number): album{
+    let myAlbum: album = {
+        artistName: artist,
+        albumTitle: title,
+    };
+    if (track !== undefined)
+        myAlbum.tracks = track;
+    return myAlbum;
+}
+
+console.log(make_album('Artist 1', 'Album 1', 10));
+console.log(make_album('Artist 2', 'Album 2'));
+console.log(make_album('Artist 3', 'Album 1', 16));
+
 
 /*********************************************************************************************************************
 41. Magicians: Make a array of magician’s names. Pass the array to a function called show_magicians(), which prints the name of each magician in the array.
