@@ -348,6 +348,7 @@ const validIndexValue = myArray[2]; // Accessing index 2 (third element)
 
 
 console.log(validIndexValue); // Printing the valid value
+console.log('**********************************************************************************************************************');
 
 /*********************************************************************************************************************
 23. Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
@@ -359,64 +360,65 @@ console.log(car == 'subaru')
 • Look closely at your results, and make sure you understand why each line evaluates to True or False.
 • Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
 ***************************************************************************************************************************/
-// // Test 1: Equality check
-// let num1: number = 5;
-// let num2: number = 5;
-// console.log("Is num1 == num2? I predict True.");
-// console.log(num1 == num2); // True
+// Test 1: Equality check
+let num1: number = 5;
+let num2: number = 5;
+console.log("Is num1 == num2? I predict True.");
+console.log(num1 == num2); // True
 
-// // Test 2: Inequality check
-// let x: number = 10;
-// let y: number = 20;
-// console.log("Is x != y? I predict True.");
-// console.log(x != y); // True
+// Test 2: Inequality check
+let x: number = 10;
+let y: number = 20;
+console.log("Is x != y? I predict True.");
+console.log(x != y); // True
 
-// // Test 3: Greater than check
-// let a: number = 15;
-// let b: number = 10;
-// console.log("Is a > b? I predict True.");
-// console.log(a > b); // True
+// Test 3: Greater than check
+let a: number = 15;
+let b: number = 10;
+console.log("Is a > b? I predict True.");
+console.log(a > b); // True
 
-// // Test 4: Less than check
-// let p: number = 7;
-// let q: number = 12;
-// console.log("Is p < q? I predict True.");
-// console.log(p < q); // True
+// Test 4: Less than check
+let p: number = 7;
+let q: number = 12;
+console.log("Is p < q? I predict True.");
+console.log(p < q); // True
 
-// // Test 5: Greater than or equal to check
-// let m: number = 25;
-// let n: number = 25;
-// console.log("Is m >= n? I predict True.");
-// console.log(m >= n); // True
+// Test 5: Greater than or equal to check
+let m: number = 25;
+let n: number = 25;
+console.log("Is m >= n? I predict True.");
+console.log(m >= n); // True
 
-// // Test 6: Less than or equal to check
-// let r: number = 30;
-// let s: number = 35;
-// console.log("Is r >= s? I predict False.");
-// console.log(r >= s); // False
+// Test 6: Less than or equal to check
+let r: number = 30;
+let s: number = 35;
+console.log("Is r >= s? I predict False.");
+console.log(r >= s); // False
 
-// // Test 7: Strict equality check
-// let str1: string = "hello";
-// let str2: string = "hello";
-// console.log("Is str1 !== str2? I predict False.");
-// console.log(str1 !== str2); // False
+// Test 7: Strict equality check
+let str12: string = "hello";
+let str22: string = "hello";
+console.log("Is str1 !== str2? I predict False.");
+console.log(str12 !== str22); // False
 
-// // Test 8: Check if bool1 is true
-// let bool1: boolean = true;
-// console.log("Is bool1 true? I predict True.");
-// console.log(bool1); // True
+// Test 8: Check if bool1 is true
+let bool1: boolean = true;
+console.log("Is bool1 true? I predict True.");
+console.log(bool1); // True
 
-// // Test 9: Logical AND operator
-// let sunny: boolean = true;
-// let warm: boolean = true;
-// console.log("Is it sunny && warm? I predict True.");
-// console.log(sunny && warm); // True
+// Test 9: Logical AND operator
+let sunny: boolean = true;
+let warm: boolean = true;
+console.log("Is it sunny && warm? I predict True.");
+console.log(sunny && warm); // True
 
-// // Test 10: Logical OR operator
-// let raining: boolean = false;
-// let windy: boolean = true;
-// console.log("Is it raining || windy? I predict True.");
-// console.log(raining || windy); // True
+// Test 10: Logical OR operator
+let raining: boolean = false;
+let windy: boolean = true;
+console.log("Is it raining || windy? I predict True.");
+console.log(raining || windy); // True
+console.log('**********************************************************************************************************************');
 
 /*********************************************************************************************************************
 24. More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
@@ -430,91 +432,93 @@ console.log(car == 'subaru')
 // Tests for equality and inequality with strings:
 
 // Equality Test with Strings (True)
-// let str1: string = "apple";
-// let str2: string = "apple";
-// console.log("Is str1 equal to str2? I predict True.");
-// console.log(str1 === str2); // True
+let str1: string = "apple";
+let str2: string = "apple";
+console.log("Is str1 equal to str2? I predict True.");
+console.log(str12 === str22); // True
 
-// // Inequality Test with Strings (False)
-// let str3: string = "banana";
-// let str4: string = "apple";
-// console.log("Is str3 not equal to str4? I predict False.");
-// console.log(str3 === str4); // False
+// Inequality Test with Strings (False)
+let str3: string = "banana";
+let str4: string = "apple";
+console.log("Is str3 not equal to str4? I predict False.");
+console.log(str3 === str4); // False
 
-// // Tests using the toLowerCase function:
+// Tests using the toLowerCase function:
 
-// // Lowercase Test (True)
-// let word1: string = "HELLO";
-// let word2: string = "hello";
-// console.log("Is word1.toLowerCase() equal to word2? I predict True.");
-// console.log(word1.toLowerCase() === word2); // True
+// Lowercase Test (True)
+let word1: string = "HELLO";
+let word2: string = "hello";
+console.log("Is word1.toLowerCase() equal to word2? I predict True.");
+console.log(word1.toLowerCase() === word2); // True
 
-// // Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to:
+// Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to:
 
-// // Greater Than Test (True)
-// let num1: number = 10;
-// let num2: number = 5;
-// console.log("Is num1 greater than num2? I predict True.");
-// console.log(num1 > num2); // True
+// Greater Than Test (True)
+let num6: number = 10;
+let num7: number = 5;
+console.log("Is num1 greater than num2? I predict True.");
+console.log(num6 > num7); // True
 
-// // Less Than or Equal To Test (False)
-// let num3: number = 15;
-// let num4: number = 10;
-// console.log("Is num3 less than or equal to num4? I predict False.");
-// console.log(num3 <= num4); // False
+// Less Than or Equal To Test (False)
+let num3: number = 15;
+let num4: number = 10;
+console.log("Is num3 less than or equal to num4? I predict False.");
+console.log(num3 <= num4); // False
 
-// // Tests using "and" and "or" operators:
+// Tests using "and" and "or" operators:
 
-// // Logical OR Test (True)
-// let isSunny: boolean = true;
-// let isWarm: boolean = false;
-// console.log("Is it sunny or warm? I predict True.");
-// console.log(isSunny || isWarm); // True
+// Logical OR Test (True)
+let isSunny: boolean = true;
+let isWarm: boolean = false;
+console.log("Is it sunny or warm? I predict True.");
+console.log(isSunny || isWarm); // True
 
-// // Logical AND Test (False)
-// let isRaining: boolean = true;
-// let isWindy: boolean = false;
-// console.log("Is it raining and windy? I predict False.");
-// console.log(isRaining && isWindy); // False
+// Logical AND Test (False)
+let isRaining: boolean = true;
+let isWindy: boolean = false;
+console.log("Is it raining and windy? I predict False.");
+console.log(isRaining && isWindy); // False
 
-// // Test whether an item is in an array:
+// Test whether an item is in an array:
 
-// // Array Includes Test (True)
-// let fruits: string[] = ["apple", "banana", "cherry"];
-// let searchFruit: string = "banana";
-// console.log(`Is ${searchFruit} in the fruits array? I predict True.`);
-// console.log(fruits.includes(searchFruit)); // True
+// Array Includes Test (True)
+let fruits: string[] = ["apple", "banana", "cherry"];
+let searchFruit: string = "banana";
+console.log(`Is ${searchFruit} in the fruits array? I predict True.`);
+console.log(fruits.includes(searchFruit)); // True
 
-// // Test whether an item is not in an array:
+// Test whether an item is not in an array:
 
-// // Array Excludes Test (False)
-// let colors: string[] = ["red", "green", "blue"];
-// let searchColor: string = "yellow";
-// console.log(`Is ${searchColor} not in the colors array? I predict False.`);
-// console.log(!colors.includes(searchColor)); // False
+// Array Excludes Test (False)
+let colors: string[] = ["red", "green", "blue"];
+let searchColor: string = "yellow";
+console.log(`Is ${searchColor} not in the colors array? I predict False.`);
+console.log(colors.includes(searchColor)); // False
+console.log('**********************************************************************************************************************');
 
 /*********************************************************************************************************************
 25. Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
 • Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
 • Write one version of this program that passes the if test and another that fails. (The version that fails will have no output.)
 ***************************************************************************************************************************/
-// let  alien_color: string = 'green'
-// let points: number = 0
+let  alien_color: string = 'green'
+let points: number = 0
 
 // 1st Version ----> Passes the test
-//------------------------------------------
-// if (alien_color === 'green'){
-//     points += 5
-//     console.log(`Player just earned ${points} points`);
-// }
+// ------------------------------------------
+if (alien_color === 'green'){
+    points += 5
+    console.log(`Player just earned ${points} points`);
+}
 
-//2nd Version ----> Fails the test
-//-------------------------------------------
-// let alien_color_fail: string = 'red';
+// 2nd Version ----> Fails the test
+// -------------------------------------------
+let alien_color_fail: string = 'red';
 
-// if (alien_color_fail === 'green') {
-//     console.log("Congratulations! You just earned 5 points.");
-// }
+if (alien_color_fail === 'green') {
+    console.log("Congratulations! You just earned 5 points.");
+}
+console.log('**********************************************************************************************************************');
 
 /*********************************************************************************************************************
 26. Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
@@ -522,30 +526,31 @@ console.log(car == 'subaru')
 • If the alien’s color isn’t green, print a statement that the player just earned 10 points.
 • Write one version of this program that runs the if block and another that runs the else block.
 ***************************************************************************************************************************/
-// let  alien_color: string = 'green'
-// let points: number = 0
+let  alien_color2: string = 'green'
+let points2: number = 0
 
 // 1st Version ----> Using if Statements
-//----------------------------------------------------------
-// if (alien_color === 'green'){
-//     points += 5
-//     console.log(`Player just earned ${points} points`);
-// }
-// if (alien_color !== 'green'){
-//     points += 10
-//     console.log(`Player just earned ${points} points`);
-// }
+// ----------------------------------------------------------
+if (alien_color2 === 'green'){
+    points2 += 5
+    console.log(`Player just earned ${points2} points`);
+}
+if (alien_color2 !== 'green'){
+    points2 += 10
+    console.log(`Player just earned ${points2} points`);
+}
 
 // 2nd Version ----> Using if-else Statement
-//---------------------------------------------------------
-// if (alien_color === 'red'){
-//     points += 5
-//     console.log(`Player just earned ${points} points`);
-// }
-// else{
-//     points += 10
-//     console.log(`Player just earned ${points} points`);
-// }
+// ---------------------------------------------------------
+if (alien_color2 === 'red'){
+    points2 += 5
+    console.log(`Player just earned ${points2} points`);
+}
+else{
+    points2 += 10
+    console.log(`Player just earned ${points2} points`);
+}
+console.log('**********************************************************************************************************************');
 
 /*********************************************************************************************************************
 27. Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
@@ -554,54 +559,55 @@ console.log(car == 'subaru')
 • If the alien is red, print a message that the player earned 15 points.
 • Write three versions of this program, making sure each message is printed for the appropriate color alien.
 ***************************************************************************************************************************/
-// let  alien_color: string = 'green'
-// let points: number = 0
+let  alien_color3: string = 'green'
+let points3: number = 0
 
 // 1st Version ----> Using if Statements
-//----------------------------------------------------------
-// if (alien_color === 'green'){
-//     points += 5
-//     console.log(`Player just earned ${points} points`);
-// }
-// if (alien_color === 'yellow'){
-//     points += 10
-//     console.log(`Player just earned ${points} points`);
-// }
-// if (alien_color === 'red'){
-//     points += 15
-//     console.log(`Player just earned ${points} points`);
-// }
+// ----------------------------------------------------------
+if (alien_color3 === 'green'){
+    points3 += 5
+    console.log(`Player just earned ${points3} points`);
+}
+if (alien_color3 === 'yellow'){
+    points3 += 10
+    console.log(`Player just earned ${points3} points`);
+}
+if (alien_color3 === 'red'){
+    points3 += 15
+    console.log(`Player just earned ${points3} points`);
+}
 
 // 2nd Version ----> Using if-else Statement
-//---------------------------------------------------------
-// if (alien_color === 'green'){
-//     points += 5
-//     console.log(`Player just earned ${points} points`);
-// }
-// else if (alien_color === 'yellow'){
-//     points += 10
-//     console.log(`Player just earned ${points} points`);
-// }
-// else {
-//     points += 15
-//     console.log(`Player just earned ${points} points`);
-// }
+// ---------------------------------------------------------
+if (alien_color3 === 'green'){
+    points3 += 5
+    console.log(`Player just earned ${points3} points`);
+}
+else if (alien_color3 === 'yellow'){
+    points3 += 10
+    console.log(`Player just earned ${points3} points`);
+}
+else {
+    points3 += 15
+    console.log(`Player just earned ${points3} points`);
+}
 
 // 3rd Version ----> Using Switch Statement
-//---------------------------------------------------------
-// switch (alien_color){
-//     case "green":
-//         points += 5
-//         console.log(`Player just earned ${points} points`);
-//         break;
-//     case "yellow":
-//         points += 10
-//         console.log(`Player just earned ${points} points`);
-//         break;
-//     case "red":
-//         points += 15
-//         console.log(`Player just earned ${points} points`);
-// }
+// ---------------------------------------------------------
+switch (alien_color3){
+    case "green":
+        points3 += 5
+        console.log(`Player just earned ${points3} points`);
+        break;
+    case "yellow":
+        points3 += 10
+        console.log(`Player just earned ${points3} points`);
+        break;
+    case "red":
+        points3 += 15
+        console.log(`Player just earned ${points3} points`);
+}
+console.log('**********************************************************************************************************************');
 
 /*********************************************************************************************************************
 28. Stages of Life: Write an if-else chain that determines a person’s stage of life. Set a value for the variable age, and then:
@@ -612,72 +618,77 @@ console.log(car == 'subaru')
 • If the person is at least 20 years old but less than 65, print a message that the person is an adult.
 • If the person is age 65 or older, print a message that the person is an elder.
 ***************************************************************************************************************************/
-// const age:number = 1;
+const age:number = 1;
 
-// if (age >= 65)
-//     console.log("The person is an elder");
-// else if ( age >= 20)
-//     console.log("The person is an adult");
-// else if (age >= 13)
-//     console.log("The person is a teenager");
-// else if (age >= 4)
-//     console.log("The person is a kid");
-// else if (age >= 2)
-//     console.log("The person is a toddler");
-// else
-//     console.log("The person is a baby");
+if (age >= 65)
+    console.log("The person is an elder");
+else if ( age >= 20)
+    console.log("The person is an adult");
+else if (age >= 13)
+    console.log("The person is a teenager");
+else if (age >= 4)
+    console.log("The person is a kid");
+else if (age >= 2)
+    console.log("The person is a toddler");
+else
+    console.log("The person is a baby");
+    console.log('**********************************************************************************************************************');
 
 /*********************************************************************************************************************
 29. Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent if statements that check for certain fruits in your array.
 • Make a array of your three favorite fruits and call it favorite_fruits.
 • Write five if statements. Each should check whether a certain kind of fruit is in your array. If the fruit is in your array, the if block should print a statement, such as You really like bananas!
 ***************************************************************************************************************************/
-// const favFruits: string[] = ['orange', 'mango', 'banana'];
+const favFruits: string[] = ['orange', 'mango', 'banana'];
 
-// for (let i:number = 0; i < favFruits.length; i++){
-//     if (favFruits[i] === 'orange')
-//         console.log("You really like oranges!");
-//     if (favFruits[i] === 'mango')
-//         console.log("You really like mangoes!");
-//     if (favFruits[i] === 'banana')
-//         console.log("You really like banana!");
-//     if (favFruits[i] === 'apple')
-//         console.log("You really like apples!");
-//     if (favFruits[i] === 'kiwi')
-//         console.log("You really like kiwi!");
-// }
+for (let i:number = 0; i < favFruits.length; i++){
+    if (favFruits[i] === 'orange')
+        console.log("You really like oranges!");
+    if (favFruits[i] === 'mango')
+        console.log("You really like mangoes!");
+    if (favFruits[i] === 'banana')
+        console.log("You really like banana!");
+    if (favFruits[i] === 'apple')
+        console.log("You really like apples!");
+    if (favFruits[i] === 'kiwi')
+        console.log("You really like kiwi!");
+}
+console.log('**********************************************************************************************************************');
+
 /*********************************************************************************************************************
 30. Hello Admin: Make an array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to each user:
 • If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status report?
 • Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
 ***************************************************************************************************************************/
-// const usernames: string[] = ["admin", "Eric", "Alice", "Bob", "Charlie"];
+const usernames1: string[] = ["admin", "Eric", "Alice", "Bob", "Charlie"];
 
-// for (let i:number = 0; i < usernames.length; i++) {
-//     if (usernames[i] === "admin")
-//         console.log("Hello admin, would you like to see a status report?");
-//     else
-//         console.log(`Hello ${usernames[i]}, thank you for logging in again.`);
-// }
+for (let i:number = 0; i < usernames1.length; i++) {
+    if (usernames1[i] === "admin")
+        console.log("Hello admin, would you like to see a status report?");
+    else
+        console.log(`Hello ${usernames1[i]}, thank you for logging in again.`);
+}
+console.log('**********************************************************************************************************************');
 
 /*********************************************************************************************************************
 31. No Users: Add an if test to Exercise 30 to make sure the list of users is not empty.
 • If the list is empty, print the message We need to find some users!
 • Remove all of the usernames from your array, and make sure the correct message is printed.
 ***************************************************************************************************************************/
-// const usernames: string[] = ["admin", "Eric", "Alice", "Bob", "Charlie"];
-// const usernames: string[] = []; // Empty List
+const usernames2: string[] = ["admin", "Eric", "Alice", "Bob", "Charlie"];
+const usernamesEmpty: string[] = []; // Empty List
 
-// if (usernames.length === 0)
-//     console.log('We need to find some users!');
-// else {
-//     for (let i: number = 0; i < usernames.length; i++) {
-//         if (usernames[i] === "admin")
-//             console.log("Hello admin, would you like to see a status report?");
-//         else
-//             console.log(`Hello ${usernames[i]}, thank you for logging in again.`);
-//     }
-// }
+if (usernames2.length === 0)
+    console.log('We need to find some users!');
+else {
+    for (let i: number = 0; i < usernames2.length; i++) {
+        if (usernames2[i] === "admin")
+            console.log("Hello admin, would you like to see a status report?");
+        else
+            console.log(`Hello ${usernames2[i]}, thank you for logging in again.`);
+    }
+}
+console.log('**********************************************************************************************************************');
 
 /*********************************************************************************************************************
 32. Checking Usernames: Do the following to create a program that simulates how websites ensure that everyone has a unique username.
@@ -686,22 +697,23 @@ console.log(car == 'subaru')
 • Loop through the new_users list to see if each new username has already been used. If it has, print a message that the person will need to enter a new username. If a username has not been used, print a message saying that the username is available.
 • Make sure your comparison is case insensitive. If 'John' has been used, 'JOHN' should not be accepted.
 ***************************************************************************************************************************/
-// const currentUsers: string[] = ['John', 'Alice', 'Eric', 'Mary', 'Sarah'];
-// const newUsers: string[] = ['mary', 'Bob', 'Eric', 'Samantha', 'John'];
+const currentUsers: string[] = ['John', 'Alice', 'Eric', 'Mary', 'Sarah'];
+const newUsers: string[] = ['mary', 'Bob', 'Eric', 'Samantha', 'John'];
 
-// // Convert currentUsers to lowercase for case-insensitive comparison
-// const currentUsersLower:string[] = currentUsers.map(n => n.toLowerCase());
-// console.log(currentUsersLower);
+// Convert currentUsers to lowercase for case-insensitive comparison
+const currentUsersLower:string[] = currentUsers.map(n => n.toLowerCase());
+console.log(currentUsersLower);
 
-// // Convert newUser to lowercase for case-insensitive comparison
-// for(let i:number = 0; i < newUsers.length; i++){
-//     const newUrsersLower: string = newUsers[i].toLowerCase();
+// Convert newUser to lowercase for case-insensitive comparison
+for(let i:number = 0; i < newUsers.length; i++){
+    const newUrsersLower: string = newUsers[i].toLowerCase();
 
-//     if (currentUsersLower.includes(newUrsersLower))
-//         console.log(`Sorry, the username "${newUsers[i]}" is already taken. Please enter a new username.`);
-//     else
-//     console.log(`The username "${newUsers[i]}" is available.`);
-// }
+    if (currentUsersLower.includes(newUrsersLower))
+        console.log(`Sorry, the username "${newUsers[i]}" is already taken. Please enter a new username.`);
+    else
+    console.log(`The username "${newUsers[i]}" is available.`);
+}
+console.log('**********************************************************************************************************************');
 
 /*********************************************************************************************************************
 33. Ordinal Numbers: Ordinal numbers indicate their position in a array, such as 1st or 2nd. Most ordinal numbers end in th, except 1, 2, and 3.
@@ -709,80 +721,86 @@ console.log(car == 'subaru')
 • Loop through the array.
 • Use an if-else chain inside the loop to print the proper ordinal ending for each number. Your output should read "1st 2nd 3rd 4th 5th 6th 7th 8th 9th", and each result should be on a separate line.
 ***************************************************************************************************************************/
-// const ordinalNumbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const ordinalNumbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-// ordinalNumbers.forEach(n => {
-//     if (n === 1)
-//         console.log(`${n}st`);
-//     else if (n === 2)
-//         console.log(`${n}nd`);
-//     else if (n === 3)
-//         console.log(`${n}rd`);
-//     else
-//         console.log(`${n}th`);
+ordinalNumbers.forEach(n => {
+    if (n === 1)
+        console.log(`${n}st`);
+    else if (n === 2)
+        console.log(`${n}nd`);
+    else if (n === 3)
+        console.log(`${n}rd`);
+    else
+        console.log(`${n}th`);
 
-// });
+});
+console.log('**********************************************************************************************************************');
 
 /*********************************************************************************************************************
 34. Pizzas: Think of at least three kinds of your favorite pizza. Store these pizza names in a array, and then use a for loop to print the name of each pizza.
 • Modify your for loop to print a sentence using the name of the pizza instead of printing just the name of the pizza. For each pizza you should have one line of output containing a simple statement like I like pepperoni pizza.
 • Add a line at the end of your program, outside the for loop, that states how much you like pizza. The output should consist of three or more lines about the kinds of pizza you like and then an additional sentence, such as I really love pizza!
 ***************************************************************************************************************************/
-// const myPizza:string[] = ['tikka', 'fajita', 'pepperoni'];
+const myPizza:string[] = ['tikka', 'fajita', 'pepperoni'];
 
-// myPizza.forEach(n => {
-//     console.log(`I like ${n}!!`);
-// });
-// console.log(`I can't resist the deliciousness of Pepperoni.`);
-// console.log(`Margherita's simplicity is a culinary masterpiece.`);
-// console.log(`The sweetness of Hawaiian pizza is simply amazing.`);
+myPizza.forEach(n => {
+    console.log(`I like ${n}!!`);
+});
+console.log(`I can't resist the deliciousness of Pepperoni.`);
+console.log(`Margherita's simplicity is a culinary masterpiece.`);
+console.log(`The sweetness of Hawaiian pizza is simply amazing.`);
+console.log('**********************************************************************************************************************');
 
 /*********************************************************************************************************************
 35. Animals: Think of at least three different animals that have a common characteristic. Store the names of these animals in a list, and then use a for loop to print out the name of each animal.
 • Modify your program to print a statement about each animal, such as A dog would make a great pet.
 • Add a line at the end of your program stating what these animals have in common. You could print a sentence such as Any of these animals would make a great pet!
 ***************************************************************************************************************************/
-// const animals: string[] = ['dog', 'cat', 'mouse'];
+const animals: string[] = ['dog', 'cat', 'mouse'];
 
-// animals.forEach(n => console.log(`A ${n} would make a great pet!!!`));
+animals.forEach(n => console.log(`A ${n} would make a great pet!!!`));
 
-// console.log('\nThey are all domesticated animals');
+console.log('\nThey are all domesticated animals');
+console.log('**********************************************************************************************************************');
 
 /*********************************************************************************************************************
 36. T-Shirt: Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt. The function should print a sentence summarizing the size of the shirt and the message printed on it. Call the function.
 ***************************************************************************************************************************/
-// function make_shirt(size: string, text: string) {
-//     return `The shirt is of size: ${size}\n"${text}"`;
-// }
+function make_shirt1(size: string, text: string) {
+    return `The shirt is of size: ${size}\n"${text}"`;
+}
 
-// console.log(make_shirt("XL", "This is a great shirt"));
+console.log(make_shirt1("XL", "This is a great shirt"));
+console.log('**********************************************************************************************************************');
 
 /*********************************************************************************************************************
 37. Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
 ***************************************************************************************************************************/
-// function make_shirt(size: string = "Large", text: string = "I love TypeScript"): string {
-//     return `The shirt is of size: ${size}\n"${text}"`;
-// }
+function make_shirt(size: string = "Large", text: string = "I love TypeScript"): string {
+    return `The shirt is of size: ${size}\n"${text}"`;
+}
 
-// // Large shirt with the Default Message
-// console.log(make_shirt());
+// Large shirt with the Default Message
+console.log(make_shirt());
 
-// // Medium shirt with the Default Message
-// console.log(make_shirt("Medium"));
+// Medium shirt with the Default Message
+console.log(make_shirt("Medium"));
 
-// //Shirt of any size and different message
-// console.log(make_shirt("Small", "This is a great shirt"));
+//Shirt of any size and different message
+console.log(make_shirt("Small", "This is a great shirt"));
+console.log('**********************************************************************************************************************');
 
 /*********************************************************************************************************************
 38. Cities: Write a function called describe_city() that accepts the name of a city and its country. The function should print a simple sentence, such as Karachi is in Pakistan. Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default country.
 ***************************************************************************************************************************/
-// function describe_city (city:string, country:string = 'Pakistan'):string{
-//     return `${city} is in ${country}`;
-// }
+function describe_city (city:string, country:string = 'Pakistan'):string{
+    return `${city} is in ${country}`;
+}
 
-// console.log(describe_city ('Lahore'));
-// console.log(describe_city ('Multan'));
-// console.log(describe_city ('Paris'));
+console.log(describe_city ('Lahore'));
+console.log(describe_city ('Multan'));
+console.log(describe_city ('Paris'));
+console.log('**********************************************************************************************************************');
 
 /*********************************************************************************************************************
 39. City Names: Write a function called city_country() that takes in the name of a city and its country. The function should return a string formatted like this:
@@ -791,114 +809,118 @@ console.log(car == 'subaru')
 
 Call your function with at least three city-country pairs, and print the value that’s returned.
 ***************************************************************************************************************************/
-// function city_country (city:string, country: string): string{
-//     return `${city}, ${country}`;
-// }
+function city_country (city:string, country: string): string{
+    return `${city}, ${country}`;
+}
 
-// console.log(city_country("Lahore", "Pakistan"));
-// console.log(city_country("Paris", "Italy"));
-// console.log(city_country("NewYork", "U.S.A"));
+console.log(city_country("Lahore", "Pakistan"));
+console.log(city_country("Paris", "Italy"));
+console.log(city_country("NewYork", "U.S.A"));
+console.log('**********************************************************************************************************************');
 
 /*********************************************************************************************************************
 40. Album: Write a function called make_album() that builds a Object describing a music album. The function should take in an artist name and an album title, and it should return a Object containing these two pieces of information. Use the function to make three dictionaries representing different albums. Print each return value to show that Objects are storing the album information correctly. Add an optional parameter to make_album() that allows you to store the number of tracks on an album. If the calling line includes a value for the number of tracks, add that value to the album’s Object. Make at least one new function call that includes the number of tracks on an album.
 ***************************************************************************************************************************/
-// type album = {artistName: string; albumTitle: string; tracks?: number}
+type album = {artistName: string; albumTitle: string; tracks?: number}
 
-// function make_album (artist: string, title: string, track?: number): album{
-//     let myAlbum: album = {
-//         artistName: artist,
-//         albumTitle: title,
-//     };
-//     if (track !== undefined)
-//         myAlbum.tracks = track;
-//     return myAlbum;
-// }
+function make_album (artist: string, title: string, track?: number): album{
+    let myAlbum: album = {
+        artistName: artist,
+        albumTitle: title,
+    };
+    if (track !== undefined)
+        myAlbum.tracks = track;
+    return myAlbum;
+}
 
-// console.log(make_album('Artist 1', 'Album 1', 10));
-// console.log(make_album('Artist 2', 'Album 2'));
-// console.log(make_album('Artist 3', 'Album 1', 16));
-
+console.log(make_album('Artist 1', 'Album 1', 10));
+console.log(make_album('Artist 2', 'Album 2'));
+console.log(make_album('Artist 3', 'Album 1', 16));
+console.log('**********************************************************************************************************************');
 
 /*********************************************************************************************************************
 41. Magicians: Make a array of magician’s names. Pass the array to a function called show_magicians(), which prints the name of each magician in the array.
 ***************************************************************************************************************************/
-// function show_magicians (magician:string[]){
-//     magician.forEach(n => console.log(n));
-// }
-// show_magicians (["Raza", "Fahad", "Ahmad"])
+function show_magicians1 (magician:string[]){
+    magician.forEach(n => console.log(n));
+}
+show_magicians1 (["Raza", "Fahad", "Ahmad"])
+console.log('**********************************************************************************************************************');
 
 /*********************************************************************************************************************
 42. Great Magicians: Start with a copy of your program from Exercise 39. Write a function called make_great() that modifies the array of magicians by adding the phrase the Great to each magician’s name. Call show_magicians() to see that the list has actually been modified.
 ***************************************************************************************************************************/
-// function make_great (magician:string[]){
-//     magician.forEach(n => console.log(`Great Magician ${n}`));
-// }
-// make_great (["Raza", "Fahad", "Ahmad"])
+function make_great2 (magician:string[]){
+    magician.forEach(n => console.log(`Great Magician ${n}`));
+}
+make_great2 (["Raza", "Fahad", "Ahmad"])
+console.log('**********************************************************************************************************************');
 
 /*********************************************************************************************************************
 43. Unchanged Magicians: Start with your work from Exercise 40. Call the function make_great() with a copy of the array of magicians’ names. Because the original array will be unchanged, return the new array and store it in a separate array. Call show_magicians() with each array to show that you have one array of the original names and one array with the Great added to each magician’s name.
 ***************************************************************************************************************************/
-// function show_magicians(magician: string[]) {
-//     magician.forEach(n => console.log(n));
-// }
+function show_magicians(magician: string[]) {
+    magician.forEach(n => console.log(n));
+}
 
-// function make_great(magician: string[]):string[] {
-//     return magician.map(n => `Great Magician ${n}`);
-// }
+function make_great(magician: string[]):string[] {
+    return magician.map(n => `Great Magician ${n}`);
+}
 
-// const originalMagicians: string[] = ["Raza", "Fahad", "Ahmad"];
-// const greatMagician: string[] = make_great([...originalMagicians]); // Create a copy of the original array
+const originalMagicians: string[] = ["Raza", "Fahad", "Ahmad"];
+const greatMagician: string[] = make_great([...originalMagicians]); // Create a copy of the original array
 
-// console.log("Original Magicians:");
-// show_magicians(originalMagicians);
+console.log("Original Magicians:");
+show_magicians(originalMagicians);
 
-// console.log("\nGreat Magicians:");
-// show_magicians(greatMagician);
-
+console.log("\nGreat Magicians:");
+show_magicians(greatMagician);
+console.log('**********************************************************************************************************************');
 
 /*********************************************************************************************************************
 44. Sandwiches: Write a function that accepts a array of items a person wants on a sandwich. The function should have one parameter that collects as many items as the function call provides, and it should print a summary of the sandwich that is being ordered. Call the function three times, using a different number of arguments each time.
 ***************************************************************************************************************************/
-// function makeSandwich(sandwichItems: string[]) {
-//     console.log("Sandwich Summary:");
-//     if (sandwichItems.length === 0) {
-//         return "You ordered an empty sandwich.";
-//     }
-//     else {
-//         console.log("You ordered a sandwich with the following items:");
-//         return sandwichItems.map(item => `- ${item}`);
-//     }
-// }
+function makeSandwich(sandwichItems: string[]) {
+    console.log("Sandwich Summary:");
+    if (sandwichItems.length === 0) {
+        return "You ordered an empty sandwich.";
+    }
+    else {
+        console.log("You ordered a sandwich with the following items:");
+        return sandwichItems.map(item => `- ${item}`);
+    }
+}
 
-// console.log(makeSandwich([]));
-// console.log(makeSandwich(['Turkey', 'Beef']));
-// console.log(makeSandwich(['Turkey', 'Beef', 'Fajitas']));
+console.log(makeSandwich([]));
+console.log(makeSandwich(['Turkey', 'Beef']));
+console.log(makeSandwich(['Turkey', 'Beef', 'Fajitas']));
+console.log('**********************************************************************************************************************');
 
 /*********************************************************************************************************************
 45. Cars: Write a function that stores information about a car in a Object. The function should always receive a manufacturer and a model name. It should then accept an arbitrary number of keyword arguments. Call the function with the required information and two other name-value pairs, such as a color or an optional feature. Print the Object that’s returned to make sure all the information was stored correctly.
 ***************************************************************************************************************************/
-// type CarType = {
-//     manufacturerT: string;
-//     modelT: string;
-//     colorT?: string; // Make color optional with "?"
-//     modelNumberT?: number; // Make modelNumber optional with "?"
-// };
+type CarType = {
+    manufacturerT: string;
+    modelT: string;
+    colorT?: string; // Make color optional with "?"
+    modelNumberT?: number; // Make modelNumber optional with "?"
+};
 
-// function car(manufacturer: string, model: string, color?: string, modelNumber?: number): CarType {
-//     let myCar: CarType = {
-//         manufacturerT: manufacturer,
-//         modelT: model,
-//     };
+function car(manufacturer: string, model: string, color?: string, modelNumber?: number): CarType {
+    let myCar: CarType = {
+        manufacturerT: manufacturer,
+        modelT: model,
+    };
 
-//     if (color !== undefined)
-//         myCar.colorT = color;
-//     if (modelNumber !== undefined)
-//         myCar.modelNumberT = modelNumber;
+    if (color !== undefined)
+        myCar.colorT = color;
+    if (modelNumber !== undefined)
+        myCar.modelNumberT = modelNumber;
 
-//     return myCar;
-// }
+    return myCar;
+}
 
 
-// const myCar = car('Toyota', 'Camry', 'Blue', 2023);
-// console.log(myCar);
-
+const myCar = car('Toyota', 'Camry', 'Blue', 2023);
+console.log(myCar);
+console.log('**********************************************************************************************************************');
