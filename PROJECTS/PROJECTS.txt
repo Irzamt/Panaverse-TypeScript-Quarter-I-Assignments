@@ -43,3 +43,4 @@ In this project you are going to follow this video which explains object oriente
 11. Learning Object Oriented Programming with TypeScript MyBank Console App
 In this project you are going to follow this video which explains object oriented programming using C# and write the same code in TypeScript.
 
+------------------------------------------------------------------------
